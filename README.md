@@ -1,4 +1,4 @@
-# Ready 2020 Pre-day Azure Monitoring 1-day Workshop
+# Azure Monitoring 1-day Workshop
 
 ## Overview
 
