@@ -1,5 +1,10 @@
 # Azure Monitoring 1-day Workshop
 
+[Setup Guide](https://github.com/kayodeprinceMS/AzureMonitorHackathon/blob/master/Student/Guides/Deployment%20Setup%20Guide.docx?raw=true)
+
+[Challenges](https://github.com/kayodeprinceMS/AzureMonitorHackathon/blob/master/Student/Guides/Challenges.pptx?raw=true)
+
+[Proctors Guide](https://github.com/kayodeprinceMS/AzureMonitorHackathon/blob/master/Host/Proctors%20Guide.docx?raw=true)
 ## Overview
 
 ### This challenge-based Azure Monitoring workshop is intended to teach you how to monitor Azure workloads. During this day you will be working Azure Monitor, Log Analytics and Application Insights.
