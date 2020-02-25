@@ -53,8 +53,8 @@
 
 ### 3 – 3:15 PM: Break
 
-### 3:15 – 5 PM: 4.	Azure Monitor Dashboard and Analytics Challenge and/or Workbooks Challenge
+### 3:15 – 4 PM: Azure Monitor Logs Challenge
 
-## Note: We are planning to provide a few side challenges as well
+### 4 – 5 PM:	Azure Monitor Dashboard and Analytics Challenge and/or Workbooks Challenge
 
 
