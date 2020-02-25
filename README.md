@@ -4,12 +4,6 @@
 
 ### This challenged based Azure Monitoring workshop is intended to teach how to monitor Azure workloads. During this day you will be working Azure Monitor, Log Analytics and Application Insights.
 
-[Setup Guide](https://github.com/rkuehfus/pre-ready-2019-H1/blob/master/Student/Guides/Deployment%20Setup%20Guide.docx?raw=true)
-
-[Challenges](https://github.com/rkuehfus/pre-ready-2019-H1/blob/master/Student/Guides/Challenges.pptx?raw=true)
-
-[Proctors Guide](https://github.com/rkuehfus/pre-ready-2019-H1/blob/master/Host/Proctors%20Guide.docx?raw=true)
-
 ## Outcome
 
 ### Understand Azure Monitor capabilities, facilitate an Azure Monitor customer conversation, and demo key features of Azure Monitor.
@@ -20,16 +14,23 @@
 
 ## Prerequisites
 
-### 1.	Please review the following content before the event
-[Azure Monitor E2E w/ Announcements](https://myignite.techcommunity.microsoft.com/sessions/65571)
+### 1.	Please review the following docs before the event
+[Send Guest OS metrics to the Azure Monitor metric store](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/collect-custom-metrics-guestos-resource-manager-vm)
+[Get Started with Metrics Explorer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-getting-started)
+[View and Manage Alerts in Azure Portal](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric#view-and-manage-with-azure-portal)
 
-[Azure Monitor for VMs/Containers & Log Analytics](https://myignite.techcommunity.microsoft.com/sessions/65782)
+[Create metric alerts with ARM templates](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric-create-templates)
+[Create Action Rules](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-action-rules)
 
-[Continuous Monitoring for DevOps](https://myignite.techcommunity.microsoft.com/sessions/66593)
+[Monitor your Kubernetes Cluster](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-analyze)
+[View Kubernetes logs, events, and pod metrics in real-time](https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-livedata-overview)
 
-[Network Monitoring](https://myignite.techcommunity.microsoft.com/sessions/66293)
+[Start Monitoring Your ASP.NET Core Web Application](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/dotnetcore-quick-start)
+[What does Application Insights Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview#what-does-application-insights-monitor)
 
-[Azure Monitor Telemetry & ITSM/SIEM Partners](https://myignite.techcommunity.microsoft.com/sessions/66187)
+[Grafana Integration](https://grafana.com/grafana/plugins/grafana-azure-monitor-datasource)
+
+[Create interactive reports with workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-workbooks)
 
 ### 2.	Attendees have access to an Azure Subscription where they can each deploy the provided ARM template that will build a very detailed infrastructure to monitor.  This includes the Vnet, subnets, NSG(s), LB(s), NAT rules, scales set and a fully functional .NET Core Application (eShopOnWeb) to monitor.
 ### 3.	Attendees should have a level 200-300 understanding of the Azure platform.  Understand concepts like PowerShell, Azure Cli, ARM, resource groups, RBAC, network, storage, compute, scale sets, virtual machines and security.  Previous experience working with ARM templates is recommended.
