@@ -26,13 +26,12 @@ $zipFileeShopTemp = [System.IO.Path]::GetTempPath().ToString() + "eShopOnWeb-mas
 if (Test-Path $zipFileeShopTemp) { Remove-Item $zipFileeShopTemp -Force }
 $zipFileeShop = [System.IO.Path]::GetTempFileName() | Rename-Item -NewName "eShopOnWeb-master.zip" -PassThru
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest -Uri "https://github.com/dotnet-architecture/eShopOnWeb/archive/master.zip" -OutFile $zipFileeShop
+Invoke-WebRequest -Uri "https://github.com/SpektraSystems/eShopOnWeb/archive/master.zip" -OutFile $zipFileeShop
 $BackUpPath = $zipFileeShop.FullName
 New-Item -Path c:\eshoponweb -ItemType directory -Force
 $Destination = "C:\eshoponweb"
 Add-Type -assembly "system.io.compression.filesystem" -PassThru
 [io.compression.zipfile]::ExtractToDirectory($BackUpPath, $destination)
-
 
 #Modified version of Update eShopOnWeb project to use SQL Server
 #modify Startup.cs
