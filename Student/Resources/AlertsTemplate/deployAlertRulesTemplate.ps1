@@ -5,7 +5,7 @@ $rgname="your-resourcegroupName-here"
 $rg = Get-AzResourceGroup -Name $rgname
 
 #Get Azure Monitor Action Group
-(Get-AzActionGroup -ResourceGroup "Default-activityLogAlerts").Id
+(Get-AzActionGroup -ResourceGroup $rgname).Id
 
 #Update Path to files as needed
 #Update the parameters file with the names of your VMs and the ResourceId of your Action Group (use command above to find ResourceId)
