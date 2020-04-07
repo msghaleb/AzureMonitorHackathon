@@ -19,7 +19,7 @@
 
 ## Prerequisites
 
-### 1.	Please review the following docs before the event
+### 1.	Please review the following docs before or during the event when necessary
 [Send Guest OS metrics to the Azure Monitor metric store](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/collect-custom-metrics-guestos-resource-manager-vm)
 
 [Get Started with Metrics Explorer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-getting-started)
