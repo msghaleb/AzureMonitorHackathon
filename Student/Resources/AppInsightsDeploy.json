@@ -71,7 +71,8 @@
             "location": "[parameters('appLocation')]",
             "tags": {},
             "properties": {
-                "ApplicationId": "[parameters('appName')]"
+                "ApplicationId": "[parameters('appName')]",
+                "workspaceId": "[reference('LogAnalyticsDeployment').outputs.LAresourceID.value]"
             },
             "dependsOn": []
         },
