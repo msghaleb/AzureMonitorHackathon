@@ -56,11 +56,11 @@
 
 ### 10:30 - 10:45 AM: Break
 
-### 10:45  - Noon: Azure Monitor for containers Challenge
+### 10:45  - Noon: Azure Monitor Application Insights Challenge
 
 ### Noon – 1 PM: Lunch
 
-### 1 – 3 PM: Azure Monitor Application Insights Challenge
+### 1 – 3 PM: Azure Monitor for containers Challenge 
 
 ### 3 – 3:15 PM: Break
 
