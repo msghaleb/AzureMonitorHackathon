@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       app: web-pod
+  replicas: 2
   template:
     metadata:
       labels:
@@ -13,10 +14,10 @@ spec:
     spec:
       containers:
       - name: web-container
-        image: myakseshop.azurecr.io/web:latest
+        image: kps04cr.azurecr.io/web:latest
         resources:
           limits:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "500m"
         ports:
         - containerPort: 80
