@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "envPrefixName": {
@@ -16,7 +16,7 @@
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located."
             },
-            "defaultValue": "https://raw.githubusercontent.com/kayodeprinceMS/AzureMonitorHackathon/master/Student/Resources/"
+            "defaultValue": "https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/Student/Resources/"
         },
         "retentionPolicy": {
             "type": "int",
@@ -949,7 +949,7 @@
                         "autoUpgradeMinorVersion": true,
                         "settings": {
                             "fileUris": [
-                                "https://raw.githubusercontent.com/rkuehfus/pre-ready-2019-H1/master/Student/Resources/SetupVSServer.ps1"
+                                "https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/Student/Resources/SetupVSServer.ps1"
                             ],
                             "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ', ' ', variables('sqlSrvDBName'), ' ', parameters('password'))]"
                         }
@@ -1198,7 +1198,7 @@
                                     "autoUpgradeMinorVersion": true,
                                     "settings": {
                                         "fileUris": [
-                                            "https://raw.githubusercontent.com/rkuehfus/pre-ready-2019-H1/master/Student/Resources/SetupWebServers.ps1"
+                                            "https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/Student/Resources/SetupWebServers.ps1"
                                         ],
                                         "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ',variables('VisualStudioSrvName'), ' ', parameters('username'), ' ', parameters('password'))]"
                                     }
