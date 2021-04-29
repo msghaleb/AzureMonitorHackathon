@@ -3,14 +3,14 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "envPrefixName": {
-      "value": "moga3"
+      "value": "moga5"
     },
     "adminUserName": {
       "value": "vmadmin"
     }
 
     // by the default you will be asked for the password during the deployement
-    
+
     // uncomment this part if you would like to read the password from a Keyvault and don't forget the commas :)
     /*
     "adminUserPass": {
