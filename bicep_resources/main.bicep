@@ -666,7 +666,7 @@ module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
         'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
       ]
       commandToExecute: concat('powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ',concat(envPrefixName,'azmhSQLSrv'),' ',adminUserPass)
-    }
+    } 
   }
   dependsOn:[
     vswindows
