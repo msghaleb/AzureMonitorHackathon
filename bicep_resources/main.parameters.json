@@ -3,13 +3,14 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "envPrefixName": {
-      "type": "string",
-      "value": "enter a 5 character value here all lowercase"
+      "value": "moga3"
     },
     "adminUserName": {
-      "type": "string",
       "value": "vmadmin"
     }
+
+    // by the default you will be asked for the password during the deployement
+    
     // uncomment this part if you would like to read the password from a Keyvault and don't forget the commas :)
     /*
     "adminUserPass": {
@@ -22,10 +23,11 @@
     }
     */
     // end of the keyvault part
+
+
     // uncomment the password parameter part below if you will put your password in the paramter file and don't forget the commas :)
     /*
     "adminUserPass": {
-      "type": "securestring",
       "value": "YOUR PASSWORD HERE"
     }
     */

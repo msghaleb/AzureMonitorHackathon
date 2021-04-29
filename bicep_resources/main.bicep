@@ -4,8 +4,11 @@ TODO:
 */
 @maxLength(5)
 @minLength(2)
-param envPrefixName string = toLower('moga2')
+param envPrefixName string = toLower('mogas')
+
 param adminUserName string = 'vmadmin'
+
+@secure()
 param adminUserPass string
 param laName string = toLower(substring(concat('logaworks', uniqueString(resourceGroup().id)), 0, 20))
 //param keyvaultName string = toLower(substring(concat('keyvault', uniqueString(resourceGroup().id)), 0, 20))
@@ -662,7 +665,7 @@ module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
       fileUris: [
         'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
       ]
-      commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ${concat(envPrefixName,'azmhSQLSrv')} ${adminUserPass}'
+      commandToExecute: concat('powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ',concat(envPrefixName,'azmhSQLSrv'),' ',adminUserPass)
     }
   }
   dependsOn:[
@@ -1090,7 +1093,7 @@ resource vmssdeployment 'Microsoft.Compute/virtualMachineScaleSets@2020-06-01' =
                 fileUris: [
                   'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupWebServers.ps1'
                 ]
-                commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ${concat(envPrefixName,'azmhVSSrv')} ${adminUserName} ${adminUserPass}'
+                commandToExecute: concat('powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ',concat(envPrefixName,'azmhVSSrv'),' ',adminUserName,' ',adminUserPass)
               }
             }
           }
