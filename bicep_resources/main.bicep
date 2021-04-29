@@ -4,7 +4,7 @@ TODO:
 */
 @maxLength(5)
 @minLength(2)
-param envPrefixName string = toLower('moga1')
+param envPrefixName string = toLower('moga2')
 param adminUserName string = 'vmadmin'
 param adminUserPass string
 param laName string = toLower(substring(concat('logaworks', uniqueString(resourceGroup().id)), 0, 20))
@@ -653,20 +653,21 @@ module vswindows 'modules/windows/windows.bicep' = {
 module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
   name: 'vmextvsdeployment'
   params: {
-    vmExtName: concat(envPrefixName,'azmhVSSrv/VSSrv17CustomScriptExtension')
+    vmExtName: concat(envPrefixName,'azmhVSSrv/VSSrvCustomScriptExtension')
     vmExtPublisher: 'Microsoft.Compute'
     vmExtType: 'CustomScriptExtension'
     vmExttypeHandlerVersion: '1.9'
     vmExtenableAutomaticUpgrade: false
     vmExtsettings: {
       fileUris: [
-        'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/Student/Resources/SetupVSServer.ps1'
+        'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
       ]
       commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ${concat(envPrefixName,'azmhSQLSrv')} ${adminUserPass}'
     }
   }
   dependsOn:[
     vswindows
+    sqlwindows
   ]
 }
 
@@ -1087,7 +1088,7 @@ resource vmssdeployment 'Microsoft.Compute/virtualMachineScaleSets@2020-06-01' =
               autoUpgradeMinorVersion: true
               settings: {
                 fileUris: [
-                  'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/Student/Resources/SetupWebServers.ps1'
+                  'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupWebServers.ps1'
                 ]
                 commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ${concat(envPrefixName,'azmhVSSrv')} ${adminUserName} ${adminUserPass}'
               }
