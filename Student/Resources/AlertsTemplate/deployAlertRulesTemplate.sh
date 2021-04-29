@@ -20,7 +20,7 @@ az resource list --resource-type 'Microsoft.Insights/actiongroups' -g $resourceG
 
 # Step 3: Update Path to files as needed
 # Update the parameters file with the names of your VMs and the ResourceId of your Action Group (use command above to find ResourceId)
-declare template="./GenerateAlertRules.json"
+declare template="./GenerateAlertRules.bicep"
 declare para="./deployAlertRules.parameters.json"
 
 # Step 4: Kick off the deployment

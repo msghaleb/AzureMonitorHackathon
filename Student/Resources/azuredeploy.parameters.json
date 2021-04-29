@@ -3,12 +3,15 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "envPrefixName": {
+      "type": "string",
       "value": "enter a 5 character value here all lowercase"
     },
     "username": {
+      "type": "string",
       "value": "vmadmin"
     },
     "password": {
+      "type": "securestring",
       "reference": {
         "keyVault": {
           "id": "<paste your vault resourceId here>"

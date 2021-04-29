@@ -9,7 +9,7 @@ $rg = Get-AzResourceGroup -Name $rgname
 
 #Update Path to files as needed
 #Update the parameters file with the names of your VMs and the ResourceId of your Action Group (use command above to find ResourceId)
-$template=".\AlertsTemplate\GenerateAlertRules.json"
+$template=".\AlertsTemplate\GenerateAlertRules.bicep"
 $para=".\AlertsTemplate\deployAlertRules.parameters.json"
 
 $job = 'job.' + ((Get-Date).ToUniversalTime()).tostring("MMddyy.HHmm")

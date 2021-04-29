@@ -3,12 +3,12 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "actionGroupId": {
-            "value": "<Action Group ResourceId>"
+            "value": "/subscriptions/e286af66-7f90-4171-9800-802a1eed7266/resourceGroups/Default-ActivityLogAlerts/providers/microsoft.insights/actiongroups/email"
         },
         "alertVMs": {
             "value": [
-                "xxxxxsqlSrv16",
-                "xxxxxVSSrv17"
+                "azmhSQLSrv16",
+                "azmhVSSrv17"
             ]   
          }
     }
