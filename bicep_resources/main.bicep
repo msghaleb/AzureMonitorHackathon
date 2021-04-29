@@ -4,9 +4,9 @@ TODO:
 */
 @maxLength(5)
 @minLength(2)
-param envPrefixName string = toLower('moga0')
-param adminUserName string = 'msghaleb'
-param adminUserPass string = 'R!chtung4ever!'
+param envPrefixName string = toLower('moga1')
+param adminUserName string = 'vmadmin'
+param adminUserPass string
 param laName string = toLower(substring(concat('logaworks', uniqueString(resourceGroup().id)), 0, 20))
 //param keyvaultName string = toLower(substring(concat('keyvault', uniqueString(resourceGroup().id)), 0, 20))
 param appInsightsName string = toLower(concat(envPrefixName,'az-mo-ht-appinsights'))
@@ -1453,9 +1453,9 @@ module aksdeployment 'modules/aks/aks.bicep' = {
   params:{
     subnetRef: vnet.outputs.subnetRef[2]
     omsWorkspaceId: lawsdeployment.outputs.laWsResourceId
-    dnsPrefix: concat(envPrefixName, 'azmht')
+    dnsPrefix: concat(envPrefixName, 'azhtaksdnsname')
     clusterName: envPrefixName
-    nodeResourceGroup: concat(envPrefixName, 'aks-nodes-rg')
+    nodeResourceGroup: concat('MC_',envPrefixName, '-AKS-nodes-rg')
   
   }
 }
