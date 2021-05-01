@@ -53,7 +53,14 @@ az deployment group create \
 >```
 >This is due to a [reported bug](https://github.com/Azure/bicep/issues/2243) there is a workaround [here](https://github.com/Azure/bicep/issues/2243#issuecomment-818914668).
 
-Now relax - its gonna take sometime.
+- Now relax - its gonna take sometime.
+
+- Once finished check and note the Public IP fqdn of the scale set 
+>it should be named something like: `mogasWebScaleSetPip` where `mogas` is your unique 5 characters
+
+Open the fqdn in your browser and you should see the shop
+
+![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/eshop.jpg)
 
 
 ## The Challenges
@@ -82,5 +89,21 @@ One finished you can start with the challenges.
 - [Grafana Integration](https://grafana.com/grafana/plugins/grafana-azure-monitor-datasource)
 - [Create interactive reports with workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-workbooks)
 
+## Troubleshooting
+
+-	If the eShop is not logging in, use [Firefox](https://www.mozilla.org/en-US/firefox/new/).
+-	Make sure the 5-character name does not contain any uppercase letters
+-	Make sure the password used adheres to the Azure password policy
+-	Make sure you are logged into the correct subscription and you have the at least contributors role access.  
+-	Make sure you have the compute capacity in the region you are deploying to and request an increase to the limit if needed.
+-	Make sure you are using a region that supports the public preview for Azure Monitor for VMs - link
+-	If you notice the deployment taking a long time (over 60 mins).  Note: this issue has been fixed but I’m leaving it in hear in case it ever surfaces again.
+	1.	Look at the deployment details to figure out where it’s stuck
+	2.	If you are stuck on the Visual Studio Custom Script extension (CSE)this is because the Microsoft Image was created with an older version of the CSE and has a bug.  
+		a.	Workaround 1:The workaround has been to log on to the Visual Studio Server and navigate to “C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.2” and double click on “enable” this will kick off the extension and the deployment should continue from here.  If the script times out just rerun after you manually kick off the extension and it should finish
+		b.	Workaround 2: From the Azure Portal uninstall the CustomScriptExtension (which will fail your deployment).
+		![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/uninstall_ext.jpg)
+		 
+		c.	Then rerun the ARM template and it will pick up where it left off.
 
 > **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files
