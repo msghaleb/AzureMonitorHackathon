@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "envPrefixName": {
-      "value": "moga5"
+      "value": "mogas"
     },
     "adminUserName": {
       "value": "vmadmin"
