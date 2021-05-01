@@ -1,4 +1,4 @@
-# Azure Monitor Hackathon - Under development
+# Azure Monitor Hackathon - Under construction
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
 ## About the Hackathon
@@ -58,13 +58,13 @@ Now relax - its gonna take sometime.
 
 ## The Challenges
 One finished you can start with the challenges.
-- [Challenge 1: Monitoring Basics and Dashboards]()
-- [Challenge 2: Alert and Alert Rules]()
-- [Challenge 3: Application Insights]()
-- [Challenge 4: Containers Monitoring]()
-- [Challenge 5: KQL Queries]()
-- [Challenge 6: Grafana and Analytics]()
-- [Challenge 7: Workbooks]()
+- [Challenge 1: Monitoring Basics and Dashboards](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge1.md)
+- [Challenge 2: Alert and Alert Rules](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge2.md)
+- [Challenge 3: Application Insights](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge3.md)
+- [Challenge 4: Containers Monitoring](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge4.md)
+- [Challenge 5: KQL Queries](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge5.md)
+- [Challenge 6: Grafana and Analytics](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge6.md)
+- [Challenge 7: Workbooks](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge7.md)
 
 ## Useful links
 
