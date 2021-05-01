@@ -96,7 +96,7 @@ One finished you can start with the challenges.
 -	Make sure the password used adheres to the Azure password policy
 -	Make sure you are logged into the correct subscription and you have the at least contributors role access.  
 -	Make sure you have the compute capacity in the region you are deploying to and request an increase to the limit if needed.
--	Make sure you are using a region that supports the public preview for Azure Monitor for VMs - link
+-	Can't get Azure CLI working? use the Azure Cloud Shell.  Remember to copy up the bicep template and parameters JSON files before kicking off the deployment.
 -	If you notice the deployment taking a long time (over 60 mins).  Note: this issue has been fixed but I’m leaving it in hear in case it ever surfaces again.
 	1.	Look at the deployment details to figure out where it’s stuck
 	2.	If you are stuck on the Visual Studio Custom Script extension (CSE)this is because the Microsoft Image was created with an older version of the CSE and has a bug.  
