@@ -1,5 +1,5 @@
 
-# Solution for Challenge 1
+# Challenge 1; The Solution
 
 This page will take you step by step through solving challenge one.
 
