@@ -115,4 +115,4 @@ One finished you can start with the challenges.
 		 
 		c.	Then rerun the ARM template and it will pick up where it left off.
 
-> **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files - I used it all the time!
+> **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files
