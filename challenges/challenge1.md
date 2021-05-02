@@ -8,7 +8,9 @@ Feel free to achieve this objective using the Azure Portal or by modifying the b
 > **Tip:** If you decided to use code think about managed identities and VM extensions.
 
 ### Main Objective:
-Stress the SQL using HammerDB and collect the DB/CPU counters and show them on a Dashboard.
+Understand the concept of counters, how to collect them as well as how to configure Alerts and display them in a Dashboard.    
+
+To do that you will have to stress the SQL using HammerDB and collect the DB counter as well as the CPU counters of the VMSS after loading the CPU and display them on a Dashboard.
 
 ### Tasks do finish the Challenge
 - Create an empty DB "tpcc" in the SQL server
@@ -18,6 +20,7 @@ Stress the SQL using HammerDB and collect the DB/CPU counters and show them on a
 - Simulate a CPU load on the VM Scale Set using the [cpuGenLoadwithPS.ps1](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/sources/Loadscripts/cpuGenLoadwithPS.ps1)
 - Pin the metric of the above SQL counter as well as the average VMSS CPU utilization to your Dashboard
 - Create an Alert to be notified in case the SQL active transactions went above 40
+- Create an Alert to get notified if the average CPU load on the VMSS is above 75%
 - Suppress the Alerts over the weekends
 
 
