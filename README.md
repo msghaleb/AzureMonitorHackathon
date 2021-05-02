@@ -71,7 +71,7 @@ Open the fqdn in your browser and you should see the shop
 
 ## The Challenges
 One finished you can start with the challenges.
-- [Challenge 1: Monitoring Basics and Dashboards](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge1.md)
+- [Challenge 1: Monitoring Basics, Dashboards and Alerts](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge1.md)
 - [Challenge 2: Alert and Alert Rules](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge2.md)
 - [Challenge 3: Application Insights](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge3.md)
 - [Challenge 4: Containers Monitoring](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge4.md)
@@ -115,4 +115,4 @@ One finished you can start with the challenges.
 		 
 		c.	Then rerun the ARM template and it will pick up where it left off.
 
-> **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files
+> **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files - I used it all the time!
