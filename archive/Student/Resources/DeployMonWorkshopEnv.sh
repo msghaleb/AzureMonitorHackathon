@@ -56,4 +56,4 @@ az aks get-credentials --resource-group $monitoringWorkShopName"-AKS" --name $mo
 #use this to test your connection
 kubectl get nodes
 #deploy the cluster role bindings
-kubectl create -f LogReaderRBAC.yaml
+kubectl create -f LogReaderRBAC.yml

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: web-container
-        image: kps04cr.azurecr.io/web:latest
+        image: mogab.azurecr.io/web:latest
         resources:
           limits:
             memory: "256Mi"
