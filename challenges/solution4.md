@@ -111,186 +111,42 @@ You may not see all nodes, as this is also hosted on a VMSS.
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image91.png)  
 - Use the external IP of the web-service and port 8080 to access your app deployed on AKS.
 
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image92.png){width="6.5in" height="5.308333333333334in"}
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image92.png)  
+- Return to the Azure Portal. 
+- Navigate to Azure Monitor, click on Containers, and select your cluster.  
 
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image93.png)  
+ - Alternatively you can go to your AKS, and click Insights 
+ - Click on Containers and then search for web
   
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image94.png)  
+- Or go to Controllers and search for web
 
-  
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image95.png)  
+- Generate an exception in the eShoponWeb application  
+>**Tip:** Try to change your password, similar to the exception generated in the Application Insights challenge
 
-Return to the Azure Portal. From the Kubernetes service you created,
+- Login  
+ ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image96.png)  
+- Enter the user and password provided on the page.  
+ ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image97.png)  
+- Click on My account  
 
-  
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image98.png)  
 
-click on Insights or you can navigate to Azure Monitor, click on
+- Click on Password
+Notice an exception is thrown  
 
-  
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image99.png)  
+- Click on the Web container and View container **live data**.  
 
-Containers, and select your cluster.
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image100.png)  
+- Trip the password exception again once the Status has gone from Unk to Ok.  
+  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image101.png)
+You can search for Rob, should find it in the logs!  
 
-  
-
-  
-
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image93.png){width="6.5in" height="2.2180555555555554in"}
-
-  
-
-  
-
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image94.png){width="6.5in" height="2.0347222222222223in"}
-
-  
-
-  
-
-Or
-
-  
-
-  
-
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image95.png){width="6.5in" height="3.571527777777778in"}
-
-  
-
-  
-
-- Generate an exception in the eShoponWeb application\
-
-  
-
-(Hint: Try to change your password, similar to the exception
-
-  
-
-generated in the Application Insights challenge)
-
-  
-
-  
-
-> Login
-
-  
-
->
-
-  
-
->  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image96.png){width="6.5in" height="4.413888888888889in"}
-
-  
-
->
-
-  
-
-> Enter the user and password provided on the page.
-
-  
-
->
-
-  
-
->  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image97.png){width="3.339293525809274in"
-
-  
-
-> height="1.8263888888888888in"}
-
-  
-
->
-
-  
-
-> Click on My account
-
-  
-
->
-
-  
-
->  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image98.png){width="6.5in" height="2.9451388888888888in"}
-
-  
-
->
-
-  
-
-> Click on Password
-
-  
-
->
-
-  
-
-> Notice an exception is thrown\
-
-  
-
->  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image99.png){width="5.977912292213474in"
-
-  
-
-> height="3.7547167541557305in"}
-
-  
-
->
-
-  
-
-> Click on the Web container and View container live logs.
-
-  
-
->
-
-  
-
->  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image100.png){width="6.5in" height="3.545138888888889in"}
-
-  
-
->
-
-  
-
-> Trip the password exception again once the Status has gone from Unk to
-
-  
-
-> Ok.
-
-  
-
->
-
-  
-
->  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image101.png){width="6.5in" height="2.4916666666666667in"}
-
-  
-
-  
-
-- First person to post a screen shot of the live log with the
-
-  
-
-exception message wins the challenge
-
-  
-
-  
-
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image102.png){width="6.5in" height="3.5430555555555556in"}
-
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image102.png)
+First person to post a screen shot of the live log with the exception message wins the challenge :-)  
   
 
 
