@@ -6,7 +6,7 @@
 ### Main Objective:
 Understand Activity Logs and configure an Alert to get notified if a VM has been turned off.
 
-### Tasks do finish the Challenge
+### Tasks to finish the Challenge
 - Start / Stop a VM
 - Check the Activity Logs to see the events of starting or stopping a VM
 - Create an Alert for the visual studio VM to be notified if the VM has been stopped
