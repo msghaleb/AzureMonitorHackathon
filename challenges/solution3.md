@@ -84,191 +84,51 @@ To trip an exception in the app, login with the demo account provided and try to
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image68.png)  
 First team to share a screenshot with the alert email of the exception based on the App Insights metric wins the challenge.  
 
-Good luck.
-
-  
-
-  
+Good luck.  
 
 **Client Telemetry**
 
+Enable client-side telemetry collection for your eShoponWeb application.  
+- Inject the App Insights .NET Core JavaScript snippet
+- Add the following line of code to `Web\Views\_ViewImports.cshtml`
+```
+@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+```   
+   
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image69.png)    
+- Insert **HtmlHelper** at the end of the **< head >** section in **_Layout.cshtml**
+- Add the following line of code to **Web\Views\Shared\_Layout.cshtml**
+```
+@Html.Raw(JavaScriptSnippet.FullScript)
+```
   
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image70.png)  
+- Run the app locally and explore a few pages to generate page views.
+- After a few minutes, verify that page views are being collected by App Insights.
+- In the Portal, navigate to the Performance blade of your App Insights resource and switch the toggle from Server to Browser. There you should see what you have done showing up
 
-  
-
-Enable client-side telemetry collection for your eShoponWeb application.
-
-  
-
-  
-
-Hint:
-
-  
-
-<https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications>
-
-  
-
-  
-
-Inject the App Insights .NET Core JavaScript snippet
-
-  
-
-  
-
-Add the following line of code to Web\\Views\\  \_ViewImports.cshtml
-
-  
-
-  
-
-\@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet
-
-  
-
-JavaScriptSnippet
-
-  
-
-  
-
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image69.png){width="6.5in" height="3.1798611111111112in"}
-
-  
-
-  
-
-Insert HtmlHelper at the end of the \<head\> section in
-
-  
-
-  
-
-Add the following line of code to Web\\Views\\Shared\\\_Layout.cshtml
-
-  
-
-  
-
-\@Html.Raw(JavaScriptSnippet.FullScript)
-
-  
-
-  
-
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image70.png){width="6.5in" height="3.6666666666666665in"}
-
-  
-
-  
-
-Run the app locally and explore a few pages to generate page views.
-
-  
-
-After a few minutes, verify that page views are being collected by App
-
-  
-
-Insights.
-
-  
-
-  
-
-In the Portal, navigate to the Performance blade of your App Insights
-
-  
-
-resource and switch the toggle from Server to Browser.
-
-  
-
-  
-
-Stop the app running locally and save a copy of your updated Solution in
-
-  
-
-a new location.
-
-  
-
-  
+![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image70_2.png)  
+- Stop the app running locally and save a copy of your updated Solution in a new location.
 
 **Autoscale**
 
-  
+Your app is also hosted on the VMSS deployed as part of the workshop environment. 
 
-  
+Generate test load on the VMSS app url to cause a scale out event.
 
-Your app is also hosted on the VMSS deployed as part of the workshop
-
-  
-
-environment. Generate test load on the VMSS app url to cause a scale out
-
-  
-
-event.
-
-  
-
-  
-
-From your Visual Studio Server copy the code in the LoadScripts folder
-
-  
-
-and modify it to your VMSS app URL
-
-  
-
-  
-
+- Use the code in the **sources\LoadScripts** folder and modify it to your VMSS app URL, pick one of the 2 files below depending on your environment:
+	- UrlGenLoadwithCurl.sh
+	- UrlGenLoadwithPS.ps1
+ 
+```
 for (\$i = 0 ; \$i -lt 100; \$i++)
-
-  
-
-  
-
 {
-
-  
-
-  
-
-Invoke-WebRequest -uri http://
-
-  
-
-mon19webscalesetlb.eastus.cloudapp.azure.com/
-
-  
-
-  
-
+Invoke-WebRequest -uri http://YOUR LOADBALANCER URL HERE/
 }
+```
 
-  
-
-  
-
-Run the code to generate some load on your eShopOnWeb site running on
-
-  
-
-the VMSS. If the load is high enough, it may cause a scale out
-
-  
-
-operation.
-
-  
-
-  
+- Run the code to generate some load on your eShopOnWeb site running on the VMSS. 
+- If the load is high enough, it may cause a scale out operation.
 
 Share a screenshot with your scaleset scale out operation.
 
