@@ -1,6 +1,8 @@
 
-# Challenge 3: Application Insights
+# Challenge 3: The Solution
+This page will take you step by step through solving challenge three.
 
+## Solution Steps:
 From the Visual Studio Server, navigate to
 `C:\eshoponweb\eShopOnWeb-master` and double-click on **eShopOnWeb.sln**  
   
@@ -130,7 +132,7 @@ Invoke-WebRequest -uri http://YOUR LOADBALANCER URL HERE/
 - Run the code to generate some load on your eShopOnWeb site running on the VMSS. 
 - If the load is high enough, it may cause a scale out operation.
 
-Share a screenshot with your scaleset scale out operation.
+Share a screenshot with your scale-set scale out operation.
 
   
 > Written with [StackEdit](https://stackedit.io/).
