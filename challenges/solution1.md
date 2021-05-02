@@ -235,7 +235,7 @@ You may need to jump on that box and max it out as well.
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image37.png)
 You should get an Alert similar to the one below 
 
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image38.png)
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image38.png)    
 
 
 First team to send me both alerts wins the challenge!! :)
