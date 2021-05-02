@@ -71,8 +71,10 @@ Now go to the VM Metric, you should see the SQL one we added above, add it and p
   
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image9.png)
+- can you see the new Metric?
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image10.png)
+
 >**Tip:** A bunch of OS metrics are configured already under the scale set as a sample.
 
  #### Stress the Database using HammerDB 
@@ -81,27 +83,41 @@ Now go to the VM Metric, you should see the SQL one we added above, add it and p
 
 >**Note:** HammerDB does not have native support for Windows Display Scaling. This may result in a smaller than usual UI that is difficult to read over high resolution RDP sessions. If you run into this issue later, close and re-open your RDP session to the VSServer with a lower display resolution. After the RDP session connects, you can zoom into to adjust the size.
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image11.png)
+- set it to 125% or more.
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image12.png)
+
 - From the Visual Studio Server, download the latest version of HammerDB
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image13.png)
+
 >**Tip:** If you get this Security Warning, go to Internet Options Security \\ Security Settings \\ Downloads \\ File download \\ Enable.
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image14.png)
+- Click enable
+
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image15.png)
+
 - Click ok, and try again
 - If you got the below warning message, click Actions and accept the warnings  
+
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image16.png)
 >**Tip:** If you end up closing HammerDB you have to go to C:\\Program Files\\HammerDB-3.1 and run the batch file
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image17.png)
+
 - Use HammerDB to create transaction load 
 - Double click on SQL Server and click OK, and OK on the confirm popup
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image18.png) 
+
 - Drill into SQL Server \\ TPC-C \\ Schema Build and double click on **Options**
 - Modify the Build Options for the following:
 	- SQL Server: Name of your SQL Server
@@ -114,12 +130,17 @@ Now go to the VM Metric, you should see the SQL one we added above, add it and p
 	- Virtual Users to Build Schema: 50
 >**Note: **Setting the last two at 50 should generate enough load to trip a threshold and run long enough for you to graph to show a spike
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image19.png)
+
 - Double click on Build and Click Yes to kick of a load test.
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image20.png)
+
 When the test is running it should look like the screenshot below:
 >**TIP:** If you would like to run a second test you **must** first delete the database you created and recreate it. HammerDB will not run a test against a database that has data in it. When you run a test is fills the database with a bunch of sample data.
+
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image21.png)
 #### Create your graphs on your dashboard
@@ -140,31 +161,47 @@ Remember the metric created above? you can click on pin to my Dashboard then cus
 - From Azure Monitor, create an Action group, to send email to your address
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image25.png)
+
 - Create an Alert if Active Transactions goes over 40 on the SQL Server tpcc database.
-  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image26.png){width="5.768175853018373in"
+  
+  ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image26.png)
+- Make sure to add the correct counter  
+  
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image27.png)
+
+- No set the logic to greater than 40
 
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image28.png)
 
 - Now define the action group to be the one you have created above
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image30.png)
+
 - Give the Alert a name, Description and Severity
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image29.png)
+
 - If you check your Alert Rules you should see it now enabled.
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image31.png)
+
 If you re-run the stress test keep in mind, you will need to delete the tpcc DB and re-create it.
 
+
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image32.png)
+
 I assume now you are familier with the whole topic or Dashboards, Alerts ..etc
 
 - Create a metric showing the CPU average of your VM scaleset and pin it also to your Dashboard
 
 ![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image32_2.png)
+
 should looks something like this:
+
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image33.png)
 - Now Create an Alert Rule for CPU over 75% on the Virtual Scale Set that emails you when you go over the threshold.
@@ -199,5 +236,8 @@ You may need to jump on that box and max it out as well.
 You should get an Alert similar to the one below 
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image38.png)
+
+
 First team to send me both alerts wins the challenge!! :)
 Good luck!
+
