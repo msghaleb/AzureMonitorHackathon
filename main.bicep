@@ -747,10 +747,6 @@ module sqldiagwindowsvmext 'modules/vmextension/vmextension.bicep' = {
                           counterSpecifier: '\\Memory\\Committed Bytes'
                           sampleRate: 'PT15S'
                       }
-                      {
-                        counterSpecifier: '\\SQLServer:Databases(tpcc)\\Active Transactions'
-                        sampleRate: 'PT15S'
-                      }
                   ]
               }
               WindowsEventLog: {
