@@ -33,6 +33,3 @@ The aim of the first challenge is to understand....
 
 Are you sure? finished trying? ;-) 
 [Challenge 3: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution3.md)
-
-
-> Written with [StackEdit](https://stackedit.io/).
