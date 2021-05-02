@@ -1,5 +1,5 @@
 
-# Solution for Challenge 1xxx
+# Solution for Challenge 1
 
 This page will take you step by step through solving challenge one.
 
@@ -238,4 +238,12 @@ You should get an Alert similar to the one below
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image38.png)    
 
 First team to send me both alerts wins the challenge!! :)  
-Good luck!  
+Good luck!
+
+  
+
+  
+
+
+
+> Written with [StackEdit](https://stackedit.io/).
