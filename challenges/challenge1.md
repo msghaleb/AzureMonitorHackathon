@@ -12,7 +12,7 @@ Understand the concept of counters, how to collect them as well as how to config
 
 To do that you will have to stress the SQL using HammerDB and collect the DB counter as well as the CPU counters of the VMSS after loading the CPU and display them on a Dashboard.
 
-### Tasks do finish the Challenge
+### Tasks to finish the Challenge
 - Create an empty DB "tpcc" in the SQL server
 - Enable the collection of the following counter:
 	- \SQLServer:Databases(*)\Active Transactions
