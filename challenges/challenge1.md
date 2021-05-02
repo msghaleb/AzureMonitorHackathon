@@ -18,6 +18,8 @@ Stress the SQL using HammerDB and collect the DB/CPU counters and show them on a
 - Simulate a CPU load on the VM Scale Set using the [cpuGenLoadwithPS.ps1](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/sources/Loadscripts/cpuGenLoadwithPS.ps1)
 - Pin the metric of the above SQL counter as well as the average VMSS CPU utilization to your Dashboard
 - Create an Alert to be notified in case the SQL active transactions went above 40
+- Suppress the Alerts over the weekends
+
 
 ### Definition of Done:
 Show the dashboard with the metric in it, which should also show a spike representing before and after the DB stress
