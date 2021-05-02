@@ -236,7 +236,29 @@ You may need to jump on that box and max it out as well.
 You should get an Alert similar to the one below  
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image38.png)    
+- To suppress the Alerts over the weekends, open your **Action rules** under **Manage actions**
 
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image45.png)    
+- Click on **Action rules**
+    
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image46.png)    
+- Then click **New Action rule**  
+- Under Scope, click on Select a resource and make sure you have your subscription selected. Then search for the name of the resource group that was created in the deployment of the workshop. 
+- Select your resource group when it comes up. 
+- Click Done    
+  
+
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image47.png) 
+- Filter on the VMs and VMSS
+	- Under Filter Criteria, click on filters and select Resource type
+	- Equals Virtual Machines and Virtual Machine scales sets    
+
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image48.png)    
+- Under Suppression Config, click on Edit and configure it
+  
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image49.png)  
+
+  
 First team to send me both alerts wins the challenge!! :)  
 Good luck!
 
