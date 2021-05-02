@@ -41,6 +41,3 @@ Show the dashboard with the metric in it, which should also show a spike represe
 
 Are you sure? finished trying? ;-) 
 [Challenge 1: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution1.md)
-
-
-> Written with [StackEdit](https://stackedit.io/).
