@@ -5,7 +5,7 @@ The aim of the first challenge is to understand....
 ### Main Objective:
 
 
-### Tasks do finish the Challenge
+### Tasks to finish the Challenge
 - Enable Application Insights server-side telemetry in the eShopOnWeb Web Project in the Solution.
 	- Install the Application Insights SDK NuGet package for ASP .NET Core. 
 	- Add you Application Insights Key to your code
