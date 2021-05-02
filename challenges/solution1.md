@@ -1,5 +1,5 @@
 
-# Solution 1: Monitoring basics and Dashboards
+# Solution for Challenge 1
 
 This page will take you step by step through solving challenge one.
 
