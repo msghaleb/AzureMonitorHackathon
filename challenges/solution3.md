@@ -130,9 +130,8 @@ Invoke-WebRequest -uri http://YOUR LOADBALANCER URL HERE/
 ```
 
 - Run the code to generate some load on your eShopOnWeb site running on the VMSS. 
-- If the load is high enough, it may cause a scale out operation.
+- If the load is high enough, it may cause a scale out operation.  
 
-Share a screenshot with your scale-set scale out operation.
+First team to share a screenshot with the scale-set scale out operation. wins the challenge!!
+Good luck!
 
-  
-> Written with [StackEdit](https://stackedit.io/).

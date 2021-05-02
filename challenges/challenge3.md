@@ -17,6 +17,7 @@ The aim of the first challenge is to understand....
 	
 #### Bonus task:
 - Can you hit the VMSS to cause an Auto Scale?
+- Can you publish your code to your VMSS?
 
 ### Definition of Done:
 - Show the exception Azure Portal App Insights and the Alert cause by it
@@ -33,6 +34,3 @@ The aim of the first challenge is to understand....
 
 Are you sure? finished trying? ;-) 
 [Challenge 3: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution3.md)
-
-
-> Written with [StackEdit](https://stackedit.io/).

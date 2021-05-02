@@ -115,4 +115,9 @@ One finished you can start with the challenges.
 		 
 		c.	Then rerun the ARM template and it will pick up where it left off.
 
+## Big Thanks to
+- [Martina Lang](https://www.linkedin.com/in/martina-lang-207912149/) for her help and support through out Azure Monitor Journey
+- [Rob Kuehfus](https://github.com/rkuehfus/pre-ready-2019-H1) for initialing the idea and creating the very first Azure Monitor Hack - This is Rob the one who invented the Exception in the eShop ;-)
+- [Kayode Prince](https://github.com/kayodeprinceMS/AzureMonitorHackathon) for the improving the Azure Monitor Original Hack and supporting this one
+- [Joerg Jooss](https://www.linkedin.com/in/joergjooss/) for the help within the Application Insights part
 > **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files

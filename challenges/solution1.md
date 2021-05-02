@@ -259,13 +259,6 @@ You should get an Alert similar to the one below
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image49.png)  
 
   
-First team to send me both alerts wins the challenge!! :)  
+First team to send both alerts wins the challenge!! :)  
 Good luck!
 
-  
-
-  
-
-
-
-> Written with [StackEdit](https://stackedit.io/).
