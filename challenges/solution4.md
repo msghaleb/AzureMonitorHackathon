@@ -146,7 +146,7 @@ Notice an exception is thrown
 You can search for Rob, should find it in the logs!  
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image102.png)
-First person to post a screen shot of the live log with the exception message wins the challenge :-)  
+First person to post a screenshot of the live log with the exception message wins the challenge :-)  
   
 
 
