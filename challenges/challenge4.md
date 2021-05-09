@@ -17,7 +17,7 @@ We will learn here move about Container Monitoring and how does it work
 
 #### Helpful links:
 
-- [download and install Docker](https://docs.docker.com/desktop/#download-and-install) 
+- [Download and install Docker](https://docs.docker.com/desktop/#download-and-install) 
 - [Azure Container Monitoring](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-overview)
 - [How to set up the Live Data feature](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-livedata-setup)
 
