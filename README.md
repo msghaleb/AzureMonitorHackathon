@@ -2,7 +2,7 @@
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
 ## About the Hackathon
-This hackathon is aiming to walk you though the different features of Azure Monitor, the design proposed here is not a recommendation its for learning purposes only. Through out the hackathon you will be working Azure Monitor, Log Analytics and Application Insights.
+This hackathon is aiming to walk you though the different features of Azure Monitor, the design proposed here is not a recommendation it's for learning purposes only. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights.
 
 At the end of the Hackathon you will understand Azure Monitor capabilities, facilitate an Azure Monitor conversation, and demo key features of Azure Monitor.
 
@@ -71,8 +71,8 @@ Open the fqdn in your browser and you should see the shop
 
 ## The Challenges
 One finished you can start with the challenges.
-- [Challenge 1: Monitoring Basics, Dashboards and Alerts](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge1.md)
-- [Challenge 2: Alert and Alert Rules](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge2.md)
+- [Challenge 1: The Basics, Dashboards and Alerts](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge1.md)
+- [Challenge 2: Activity Logs and Update Management](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge2.md)
 - [Challenge 3: Application Insights](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge3.md)
 - [Challenge 4: Containers Monitoring](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge4.md)
 - [Challenge 5: KQL Queries](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge5.md)
