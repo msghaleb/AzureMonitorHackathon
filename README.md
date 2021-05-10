@@ -72,12 +72,12 @@ Open the fqdn in your browser and you should see the shop
 ## The Challenges
 One finished you can start with the challenges.
 - [Challenge 1: The Basics, Dashboards and Alerts](challenges/challenge1.md)
-- [Challenge 2: Activity Logs and Update Management](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge2.md)
-- [Challenge 3: Application Insights](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge3.md)
-- [Challenge 4: Containers Monitoring](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge4.md)
-- [Challenge 5: KQL Queries](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge5.md)
-- [Challenge 6: Grafana and Analytics](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge6.md)
-- [Challenge 7: Workbooks](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/challenge7.md)
+- [Challenge 2: Activity Logs and Update Management](challenges/challenge2.md)
+- [Challenge 3: Application Insights](challenges/challenge3.md)
+- [Challenge 4: Containers Monitoring](challenges/challenge4.md)
+- [Challenge 5: KQL Queries](challenges/challenge5.md)
+- [Challenge 6: Grafana and Analytics](challenges/challenge6.md)
+- [Challenge 7: Workbooks](challenges/challenge7.md)
 
 ## Useful links
 
