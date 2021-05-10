@@ -1,4 +1,4 @@
-## Challenge 7:  Workbookssss
+## Challenge 7:  Workbooks
 
 The aim of the first challenge is to understand what is Azure Workbooks and how to create them
 
