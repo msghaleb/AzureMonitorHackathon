@@ -4,7 +4,7 @@
 - Navigate to your Application Insights resource in the Portal
 - Click on Workbooks New
 
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image145.png)
+![](../images/image145.png)
 
 - Click Empty then click "+Add" in the New Workbook section to add text describing the upcoming content in the workbook. Text is edited using Markdown syntax.
 
