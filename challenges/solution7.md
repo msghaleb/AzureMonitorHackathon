@@ -51,19 +51,20 @@ Should look something like that:
 - Change your workspace to the LA workspace with your AKS container logs
  
 Add this query which is used for section Disk Used Percentage
+```
 InsightsMetrics
 | where Namespace == "container.azm.ms/disk" 
 | where Name == "used_percent"
 | project TimeGenerated, Computer, Val 
 | summarize avg(Val) by Computer, bin(TimeGenerated, 1m)
 | render timechart
+```
   
 
 Should look like that:
 
-
-
-  
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image150.png)
+ 
 
 - Save your workbook.
 
