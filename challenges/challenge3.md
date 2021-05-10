@@ -33,4 +33,4 @@ The aim of the first challenge is to understand....
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 3: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution3.md)
+[Challenge 3: The solution](solution3.md)
