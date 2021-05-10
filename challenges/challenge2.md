@@ -30,4 +30,4 @@ Show the Alert which got fired and explain what you have done.
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 2: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution2.md)
+[Challenge 2: The solution](solution2.md)
