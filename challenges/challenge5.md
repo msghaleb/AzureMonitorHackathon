@@ -28,4 +28,4 @@ We will learn to write and save queries, which we can run on our Log Analytics W
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 5: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution5.md)
+[Challenge 5: The solution](solution5.md)
