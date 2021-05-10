@@ -33,4 +33,4 @@ Create a workbook with sections that report on the performance of your eShopWeb 
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 7: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution7.md)
+[Challenge 7: The solution](solution7.md)
