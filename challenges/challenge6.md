@@ -25,4 +25,4 @@ To install and configure Grafana Dashboards with some extra features (Variables,
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 6: The solution](https://github.com/msghaleb/AzureMonitorHackathon/blob/master/challenges/solution6.md)
+[Challenge 6: The solution](solution6.md)
