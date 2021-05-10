@@ -1,4 +1,4 @@
-# Azure Monitor Hackathon - Under construction
+# Azure Monitor Hackathon
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
 ## About the Hackathon
