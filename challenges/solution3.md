@@ -3,6 +3,17 @@
 This page will take you step by step through solving challenge three.
 
 ## Solution Steps:
+Let's create a URL Ping for the public URL of our shop
+- Open your Azure Portal
+- Go to the Public IP for your Loadbalancer
+- Note the DNS Name for it
+- Open your Application Insights instance
+- Go to availability on the left side
+- Click add Test then create as shown below  
+
+![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/urlping.png)
+Check the availability of your site and let's move on.
+
 From the Visual Studio Server, navigate to
 `C:\eshoponweb\eShopOnWeb-master` and double-click on **eShopOnWeb.sln**  
   
