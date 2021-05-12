@@ -6,6 +6,7 @@ The aim of the first challenge is to understand....
 
 
 ### Tasks to finish the Challenge
+- Create a URL ping availability test for your eShopWeb webpage
 - Enable Application Insights server-side telemetry in the eShopOnWeb Web Project in the Solution.
 	- Install the Application Insights SDK NuGet package for ASP .NET Core. 
 	- Add you Application Insights Key to your code
@@ -25,6 +26,7 @@ The aim of the first challenge is to understand....
 
 #### Helpful links:
 - [Application Insights for ASP. NET Core applications](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core#enable-application-insights-server-side-telemetry-no-visual-studio)
+- [Monitor the availability of any website](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
 - [Debug your applications with Azure Application Insights in Visual Studio](https://docs.microsoft.com/en-us/azure/azure-monitor/app/visual-studio)
 - [Microsoft.ApplicationInsights.AspNetCore](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore)
 - [Disable SSL while debugging](https://codetolive.in/ide/how-to-disable-https-or-ssl-in-visual-studio-2019-for-web-project/)
