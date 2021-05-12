@@ -1,7 +1,10 @@
 # Challenge 6: The Solution
 
+This page will take you step by step through solving challenge six.
+
+## Solution Steps:
 Deploying Grafana using Web App for Container.
-First we wil create a Web App for Linux and configure as recommended below.
+First we will create a Web App for Linux and configure as recommended below.
 
 - Create a new App service plan and select B1 Basic. It's under Dev /Test.
    ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image105.png)    
