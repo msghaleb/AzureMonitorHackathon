@@ -908,6 +908,7 @@ resource billingplan 'microsoft.insights/components/CurrentBillingFeatures@2015-
   ]
 }
 
+/*
 resource pingname 'Microsoft.Insights/webtests@2015-05-01' = {
   name: pingname_var
   tags: {
@@ -933,44 +934,8 @@ resource pingname 'Microsoft.Insights/webtests@2015-05-01' = {
     appinsightsdeployment
   ]
 }
-
-/*
-module keyvaultdeployment 'modules/keyvault.bicep' = {
-  name: 'keyvaultdeployment'
-  params:{
-    vaultName: keyvaultName
-  }
-}
-
-resource SecurityKeyVaultName_Microsoft_Insights_setForSecurity 'Microsoft.KeyVault/vaults/providers/diagnosticSettings@2017-05-01-preview' = {
-  name: '${keyvaultName}/Microsoft.Insights/setForSecurity'
-  location: resourceGroup().location
-  properties: {
-    workspaceId: lawsdeployment.outputs.laWsResourceId
-    storageAccountId: storage.outputs.storageAccountId
-    metrics: [
-      {
-        category: 'AllMetrics'
-        enabled: true
-        retentionPolicy: {
-          enabled: true
-          days: 31
-        }
-      }
-    ]
-    logs: [
-      {
-        category: 'AuditEvent'
-        enabled: true
-        days: 31
-      }
-    ]
-  }
-  dependsOn:[
-    keyvaultdeployment
-  ]
-}
 */
+
 module loadbalancerdeployment 'modules/loadbalancer/loadbalancer.bicep' = {
   name: 'loadbalancerdeployment'
   params:{
