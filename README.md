@@ -19,7 +19,7 @@ Once you deployed the Hackathon you will see two Azure Resource Groups with diff
 This micro Hackathon is designed to be deployed on a subscription level to roll out a set of resources that are used throughout the challenges. 
 Follow the below step to run the initial deployment:
 
- - Download and install git ([cllick here](https://git-scm.com/downloads))
+ - Download and install git ([click here](https://git-scm.com/downloads))
  - Download and install VS code ([click here](https://code.visualstudio.com/Download))
  - Install the Bicep extension
  - Use VS Code to clone this repository
@@ -39,10 +39,10 @@ az group create --location westus --resource-group azuremon-mogas-rg
 - By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB, if you prefer to add it to the `main.parameters.json` feel free to do you
 - Now you can kick-off the initial deployment by running:
 ```
-az deployment group create \ 
-	--name firstbicep \
-	-g azuremon-mogas-rg \
-	-f main.bicep \
+az deployment group create `
+	--name firstbicep `
+	-g azuremon-mogas-rg `
+	-f main.bicep `
 	-p main.parameters.json
 ```
 > **Tip:** the name above is the deployment name, you will see this under deployments in the RG properties if you face problems.
@@ -106,6 +106,7 @@ One finished you can start with the challenges.
 -	Make sure you are logged into the correct subscription and you have the at least contributors role access.  
 -	Make sure you have the compute capacity in the region you are deploying to and request an increase to the limit if needed.
 -	Can't get Azure CLI working? use the Azure Cloud Shell.  Remember to copy up the bicep template and parameters JSON files before kicking off the deployment.
+-	If you get a deployment error `Enabling solution of type #### is not allowed` you can ignore it, we are moving away from Solutions towards Workbooks and thus some are retired.
 -	If you notice the deployment taking a long time (over 60 mins).  Note: this issue has been fixed but I’m leaving it in hear in case it ever surfaces again.
 	1.	Look at the deployment details to figure out where it’s stuck
 	2.	If you are stuck on the Visual Studio Custom Script extension (CSE)this is because the Microsoft Image was created with an older version of the CSE and has a bug.  
