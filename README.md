@@ -122,3 +122,7 @@ One finished you can start with the challenges.
 - [Kayode Prince](https://github.com/kayodeprinceMS/AzureMonitorHackathon) for the improving the Azure Monitor Original Hack and supporting this one
 - [Joerg Jooss](https://www.linkedin.com/in/joergjooss/) for the help within the Application Insights part
 > **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files
+
+## TODO
+- Add Network Watcher
+- Azure Backup Reports
