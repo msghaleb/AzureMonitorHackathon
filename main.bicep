@@ -336,10 +336,12 @@ param lasolution object = {
       name: 'InfrastructureInsights(${laName})'
       marketplaceName: 'InfrastructureInsights'
     }
+    /*
     {
       name: 'AzureAppGatewayAnalytics(${laName})'
       marketplaceName: 'AzureAppGatewayAnalytics'
     }
+    */
     {
       name: 'AzureNSGAnalytics(${laName})'
       marketplaceName: 'AzureNSGAnalytics'
