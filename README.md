@@ -107,9 +107,9 @@ Once finished you can start with the challenges.
 ![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/bad_deployment.jpg)
 -	Make sure the 5-character name does not contain any uppercase letters
 -	Make sure the password used adheres to the Azure password policy
--	Make sure you are logged into the correct subscription and you have the at least contributors role access.  
--	Make sure you have the compute capacity in the region you are deploying to and request an increase to the limit if needed.
--	Can't get Azure CLI working? use the Azure Cloud Shell.  Remember to copy up the bicep template and parameters JSON files before kicking off the deployment.
+-	Make sure you are logged in to the correct subscription and you have at least *Contributor* access.  
+-	Make sure the needed compute capacity is available in the region you are deploying to or request a quota increase if needed.
+-	Can't get Azure CLI working? You can also use the [Azure Cloud Shell] (https://shell.azure.com).  Remember to copy the bicep template and parameters JSON files before kicking off the deployment.
 -	If you get a deployment error `Enabling solution of type #### is not allowed` you can ignore it, we are moving away from Solutions towards Workbooks and thus some are retired.
 -	If you notice the deployment taking a long time (over 60 mins).  Note: this issue has been fixed but I’m leaving it in hear in case it ever surfaces again.
 	1.	Look at the deployment details to figure out where it’s stuck
