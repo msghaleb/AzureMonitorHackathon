@@ -2,16 +2,19 @@
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
 ## About the Hackathon
-This hackathon is aiming to walk you though the different features of Azure Monitor, the design proposed here is not a recommendation it's for learning purposes only. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights.
+This hackathon walks you though the different features of Azure Monitor. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights. The design proposed here is not a recommendation, it's for learning purposes only.
 
 At the end of the Hackathon you will understand Azure Monitor capabilities, facilitate an Azure Monitor conversation, and demo key features of Azure Monitor.
 
 ## Target Audience
 
-This hackathon has been designed for DevOps engineers, administrators and IT Architects to build their knowledge on Azure Monitor. However anyone else who has a passion around Monitoring are more than welcome to attend.
+This hackathon is designed specifically for DevOps engineers, administrators and IT architects who want to build their knowledge on Azure Monitor. However, anyone with a passion around Monitoring is more than welcome to attend.
+
+## Prerequisites
+We assume that you have a basic knowledge of Azure core services (e.g., Networking).
 
 ## Initial design
-Once you deployed the Hackathon you will see two Azure Resource Groups with different set of resources, this includes the VNet, subnets, NSG(s), LB(s), NAT rules, scales set and a fully functional .NET Core Application (eShopOnWeb) to monitor. (see the design below)
+Once you deploy the Hackathon you will see two Azure Resource Groups with different set of resources. These include the VNet, subnets, NSG(s), LB(s), NAT rules, scale set and a fully functional .NET Core Application (eShopOnWeb) to monitor, as you can see in the design below.
 
 ![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/initial_design.jpg)
 
@@ -19,24 +22,24 @@ Once you deployed the Hackathon you will see two Azure Resource Groups with diff
 This micro Hackathon is designed to be deployed on a subscription level to roll out a set of resources that are used throughout the challenges. 
 Follow the below step to run the initial deployment:
 
- - Download and install git ([click here](https://git-scm.com/downloads))
- - Download and install VS code ([click here](https://code.visualstudio.com/Download))
- - Install the Bicep extension
- - Use VS Code to clone this repository
+ - Download and install Git ([click here](https://git-scm.com/downloads))
+ - Download and install VS Code ([click here](https://code.visualstudio.com/Download))
+ - Install the Bicep extension for VS Code
+ - Use VS Code to clone this repository ([click here for instructions](https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository))
 
-> **Tip:** if you got an error due to a key verification, then clone using the https not the ssh
- - Install Azure CLI ([click here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli))
+> **Tip:** if you receive an error due to a key verification, then clone using https instead of ssh
+ - Install Azure CLI ([click here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)). If you already installed it in the past, make sure that the version is v2.20.0 or higher (run `az --version` to check).
  - Open the repository and open a terminal in VS Code
  - Install bicep by running: `az bicep install` in the command line
- - Login to an azure subscription where you can create a resource group by running: `az login`
- - Create a resource group, please use 5 unique (small letters/numbers) of your choice within the RG name, e.g. `azuremon-mogas-rg` in this case my 5 characters are `mogas`
- - To create the resource group run: 
+ - Login to an azure subscription where you can create a resource group by running: `az login`. If you need to change the currently active subscription, use `az account set --subscription "<SubscriptionNameOrID"`
+ - Create a resource group, please use 5 unique (small letters/numbers) of your choice within the RG name, e.g. `azuremon-mogas-rg` in this case my 5 characters are `mogas`.
+To create the resource group run: 
 ```
 az group create --location westus --resource-group azuremon-mogas-rg
  ```
 > **Tip:** feel free to change the rg name and location as needed
-- Open the `main.parameters.json` file in code and modify the `envPrefixName` parameter value with your own unique 5 characters you used above
-- By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB, if you prefer to add it to the `main.parameters.json` feel free to do you
+- Open the `main.parameters.json` file in VS Code and modify the `envPrefixName` parameter value with your own unique 5 characters you used above
+- By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB, if you prefer to add it to the `main.parameters.json` feel free to do that.
 - Now you can kick-off the initial deployment by running:
 ```
 az deployment group create `
@@ -53,7 +56,7 @@ az deployment group create `
 >```
 >This is due to a [reported bug](https://github.com/Azure/bicep/issues/2243) there is a workaround [here](https://github.com/Azure/bicep/issues/2243#issuecomment-818914668).
 
-- Now relax - its gonna take sometime.
+- Now relax - it's gonna take sometime.
 
 > **Important:** 
 > once finished, please go to your resource group -> deployments and make sure that there are no errors.
@@ -117,7 +120,7 @@ One finished you can start with the challenges.
 		c.	Then rerun the ARM template and it will pick up where it left off.
 
 ## Big Thanks to
-- [Martina Lang](https://www.linkedin.com/in/martina-lang-207912149/) for her help and support through out Azure Monitor Journey
+- [Martina Lang](https://www.linkedin.com/in/martina-lang-207912149/) for her help and support throughout Azure Monitor Journey
 - [Rob Kuehfus](https://github.com/rkuehfus/pre-ready-2019-H1) for initialing the idea and creating the very first Azure Monitor Hack - This is Rob the one who invented the Exception in the eShop ;-)
 - [Kayode Prince](https://github.com/kayodeprinceMS/AzureMonitorHackathon) for the improving the Azure Monitor Original Hack and supporting this one
 - [Joerg Jooss](https://www.linkedin.com/in/joergjooss/) for the help within the Application Insights part
