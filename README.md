@@ -33,14 +33,14 @@ Follow the below step to run the initial deployment:
  - Open the repository and open a terminal in VS Code
  - Install bicep by running: `az bicep install` in the command line
  - Login to an azure subscription where you can create a resource group by running: `az login`. If you need to change the currently active subscription, use `az account set --subscription "<SubscriptionNameOrID"`
- - Create a resource group, please use 5 unique (small letters/numbers) of your choice within the RG name, e.g. `azuremon-mogas-rg` in this case my 5 characters are `mogas`.
+ - Create a resource group, please use up to 5 unique (small letters/numbers) of your choice within the RG name, e.g. `azuremon-mogas-rg`. In this case, the 5 characters are `mogas`.
 To create the resource group run: 
 ```
-az group create --location westus --resource-group azuremon-mogas-rg
+az group create --location westeurope --resource-group azuremon-mogas-rg
  ```
 > **Tip:** feel free to change the rg name and location as needed
 - Open the `main.parameters.json` file in VS Code and modify the `envPrefixName` parameter value with your own unique 5 characters you used above
-- By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB. However, to ensure you don't have a typo, we recommend to add it to the `main.parameters.json` file. You can use a KeyVault reference for that if you like.
+- By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB. However, to ensure you don't have a typo, we recommend to add it to the `main.parameters.json` file (see the comments in the file).
 - Now you can kick-off the initial deployment by running:
 ```
 az deployment group create `
