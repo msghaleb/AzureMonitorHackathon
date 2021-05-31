@@ -33,7 +33,7 @@ Follow the below step to run the initial deployment:
  - Open the repository and open a terminal in VS Code
  - Install bicep by running: `az bicep install` in the command line
  - Login to an azure subscription where you can create a resource group by running: `az login`. If you need to change the currently active subscription, use `az account set --subscription "<SubscriptionNameOrID"`
- - Create a resource group, please use up to 5 unique (small letters/numbers) of your choice within the RG name, e.g. `azuremon-mogas-rg`. In this case, the 5 characters are `mogas`.
+ - Create a resource group, please use up to 5 unique characters (small letters or numbers) of your choice within the RG name, e.g. `azuremon-mogas-rg`. In this case, the 5 characters are `mogas`.
 To create the resource group run: 
 ```
 az group create --location westeurope --resource-group azuremon-mogas-rg
