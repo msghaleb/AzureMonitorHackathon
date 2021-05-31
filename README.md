@@ -21,7 +21,10 @@ Once you deploy the Hackathon you will see two Azure Resource Groups with differ
 
 
 ## The Challenges
-Once finished you can start with the challenges.
+This Hackathon consists of 8 challenges. Challenge 0 is the initial deployment that will be the basis for all following activities.
+Please complete them in order.
+
+- [Challenge 0: Initial deployment](challenges/challenge0.md)
 - [Challenge 1: The Basics, Dashboards and Alerts](challenges/challenge1.md)
 - [Challenge 2: Activity Logs and Update Management](challenges/challenge2.md)
 - [Challenge 3: Application Insights](challenges/challenge3.md)
