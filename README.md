@@ -120,6 +120,11 @@ Once finished you can start with the challenges.
 		 
 		c.	Then rerun the ARM template and it will pick up where it left off.
 
+## Cleaning Up
+If you're done and would like to delete the Azure resources associated with this hackathon, please perform the following steps:
+- Delete the resource group `azuremon-xxxxx-rg`
+- Delete the Azure Monitor resources like alerts, etc.
+
 ## Big Thanks to
 - [Martina Lang](https://www.linkedin.com/in/martina-lang-207912149/) for her help and support throughout our Azure Monitor Journey
 - [Rob Kuehfus](https://github.com/rkuehfus/pre-ready-2019-H1) for initiating the idea and creating the very first Azure Monitor Hack - Rob is the one who invented the Exception in the eShop ;-)
