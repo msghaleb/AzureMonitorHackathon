@@ -2,16 +2,17 @@
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
 ## About the Hackathon
-This hackathon walks you though the different features of Azure Monitor. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights. The design proposed here is not a recommendation, it's for learning purposes only.
-
+This hackathon walks you though the different features of Azure Monitor. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights. 
 At the end of the Hackathon you will understand Azure Monitor capabilities, facilitate an Azure Monitor conversation, and demo key features of Azure Monitor.
+
+The design proposed here is not a recommendation, it's for learning purposes only.
 
 ## Target Audience
 
 This hackathon is designed specifically for DevOps engineers, administrators and IT architects who want to build their knowledge on Azure Monitor. However, anyone with a passion around Monitoring is more than welcome to attend.
 
 ## Prerequisites
-We assume that you have a basic knowledge of Azure core services (e.g., Networking).
+We assume that you have a basic knowledge of Azure core services (e.g., networking, compute).
 
 ## Initial design
 Once you deploy the Hackathon you will see two Azure Resource Groups with different set of resources. These include the VNet, subnets, NSG(s), LB(s), NAT rules, scale set and a fully functional .NET Core Application (eShopOnWeb) to monitor, as you can see in the design below.
@@ -73,7 +74,7 @@ Open the fqdn in your browser and you should see the shop
 
 
 ## The Challenges
-One finished you can start with the challenges.
+Once finished you can start with the challenges.
 - [Challenge 1: The Basics, Dashboards and Alerts](challenges/challenge1.md)
 - [Challenge 2: Activity Logs and Update Management](challenges/challenge2.md)
 - [Challenge 3: Application Insights](challenges/challenge3.md)
@@ -84,7 +85,7 @@ One finished you can start with the challenges.
 
 ## Useful links
 
-### These links are you cheat sheet ;-) it's recommended to read before or during the Hackathon
+### These links are your cheat sheet ;-) You can read them prior or during the hackathon
 
 - [Send Guest OS metrics to the Azure Monitor metric store](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/collect-custom-metrics-guestos-resource-manager-vm)
 - [Get Started with Metrics Explorer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-getting-started)
@@ -120,10 +121,10 @@ One finished you can start with the challenges.
 		c.	Then rerun the ARM template and it will pick up where it left off.
 
 ## Big Thanks to
-- [Martina Lang](https://www.linkedin.com/in/martina-lang-207912149/) for her help and support throughout Azure Monitor Journey
-- [Rob Kuehfus](https://github.com/rkuehfus/pre-ready-2019-H1) for initialing the idea and creating the very first Azure Monitor Hack - This is Rob the one who invented the Exception in the eShop ;-)
-- [Kayode Prince](https://github.com/kayodeprinceMS/AzureMonitorHackathon) for the improving the Azure Monitor Original Hack and supporting this one
-- [Joerg Jooss](https://www.linkedin.com/in/joergjooss/) for the help within the Application Insights part
+- [Martina Lang](https://www.linkedin.com/in/martina-lang-207912149/) for her help and support throughout our Azure Monitor Journey
+- [Rob Kuehfus](https://github.com/rkuehfus/pre-ready-2019-H1) for initiating the idea and creating the very first Azure Monitor Hack - Rob is the one who invented the Exception in the eShop ;-)
+- [Kayode Prince](https://github.com/kayodeprinceMS/AzureMonitorHackathon) for improving the original Azure Monitor Hack and supporting this one
+- [Joerg Jooss](https://www.linkedin.com/in/joergjooss/) for his help with the Application Insights part
 > **Tip:** [StackEdit](https://stackedit.io/) is a great tool to write Markdown files
 
 ## TODO
