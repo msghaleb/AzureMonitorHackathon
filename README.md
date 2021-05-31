@@ -1,7 +1,7 @@
 # Azure Monitor Hackathon
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
-## About the Hackathon
+
 This hackathon walks you though the different features of Azure Monitor. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights. 
 At the end of the Hackathon you will understand Azure Monitor capabilities, facilitate an Azure Monitor conversation, and demo key features of Azure Monitor.
 
@@ -15,7 +15,7 @@ This hackathon is designed specifically for DevOps engineers, administrators and
 We assume that you have a basic knowledge of Azure core services (e.g., networking, compute).
 
 ## Initial design
-Once you deploy the Hackathon you will see two Azure Resource Groups with different set of resources. These include the VNet, subnets, NSG(s), LB(s), NAT rules, scale set and a fully functional .NET Core Application (eShopOnWeb) to monitor, as you can see in the design below.
+In the beginning of this hackathon, you will deploy an environment in Azure that consists of two Azure Resource Groups with different set of resources. These include the VNet, subnets, NSG(s), LB(s), NAT rules, scale set and a fully functional .NET Core Application (eShopOnWeb) to monitor, as you can see in the design below.
 
 ![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/initial_design.jpg)
 
