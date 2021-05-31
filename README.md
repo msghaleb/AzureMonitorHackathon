@@ -40,7 +40,7 @@ az group create --location westus --resource-group azuremon-mogas-rg
  ```
 > **Tip:** feel free to change the rg name and location as needed
 - Open the `main.parameters.json` file in VS Code and modify the `envPrefixName` parameter value with your own unique 5 characters you used above
-- By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB, if you prefer to add it to the `main.parameters.json` feel free to do that.
+- By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB. However, to ensure you don't have a typo, we recommend to add it to the `main.parameters.json` file. You can use a KeyVault reference for that if you like.
 - Now you can kick-off the initial deployment by running:
 ```
 az deployment group create `
