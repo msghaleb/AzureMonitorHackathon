@@ -49,9 +49,6 @@ Please complete the challenges in order.
 - [Grafana Integration](https://grafana.com/grafana/plugins/grafana-azure-monitor-datasource)
 - [Create interactive reports with workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-workbooks)
 
-## Troubleshooting
-If you're facing any issues during deployment, please refer to the Troubleshooting section []().
-
 
 ## Cleaning Up
 If you're done and would like to delete the Azure resources associated with this hackathon, please perform the following steps:
