@@ -32,6 +32,7 @@ Please complete the challenges in order.
 - [Challenge 5: KQL Queries](challenges/challenge5.md)
 - [Challenge 6: Grafana and Analytics](challenges/challenge6.md)
 - [Challenge 7: Workbooks](challenges/challenge7.md)
+- [Challenge 8: Network Watcher](challenges/challenge8.md)
 
 ## Useful links
 
