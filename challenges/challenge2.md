@@ -1,11 +1,11 @@
 
 ## Challenge 2:  Activity Logs and Update Management
 
-**Activity Logs** are everything happening to your resources on the API level. The **Activity log** is a platform **log** in **Azure** that provides insight into subscription-level events. This includes such information as when a resource is modified or when a virtual machine is started.
+**Activity Logs** are everything happening to your resources on the API level. The Activity log is a platform log in Azure that provides insights into subscription-level events. This includes information such as when a resource is modified or when a virtual machine is started.
 
 ### Main Objective:
 Understand Activity Logs and configure an Alert to get notified if a VM has been turned off.
-Understand how to configure Azure Update Management and to keep your VMs up-to-date
+Understand how to configure Azure Update Management and how to keep your VMs up-to-date.
 
 ### Tasks to finish the Challenge
 - Start / Stop a VM
