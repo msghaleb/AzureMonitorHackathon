@@ -41,6 +41,7 @@ az group create --location westus --resource-group azuremon-mogas-rg
 - Open the `main.parameters.json` file in code and modify the `envPrefixName` parameter value with your own unique 5 characters you used above
 - By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB, if you prefer to add it to the `main.parameters.json` feel free to do you
 - Now you can kick off the initial deployment by running, **replace the rg name with yours**:
+>**Important:** DO NOT USE the character "&" in your password, this will make the Powershell scripts fail.
 ```
 az deployment group create `
 	--name firstbicep `
