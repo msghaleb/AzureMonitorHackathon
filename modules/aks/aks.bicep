@@ -40,8 +40,7 @@ param tags object = {
   environment: 'test'
 }
 
-@description('Specifies the Azure tags that will be assigned to the resource.')
-param kubernetesVersion string = '1.20.2'
+// param kubernetesVersion string = '1.20.2'
 
 param enableHttpApplicationRouting bool = true
 
@@ -49,7 +48,7 @@ param enableHttpApplicationRouting bool = true
   'azure'
   'kubenet'
 ])
-param networkPlugin string = 'azure'
+param networkPlugin string = 'kubenet'
 param maxPods int = 30
 param serviceCidr string = '10.240.0.0/16'
 
@@ -72,7 +71,7 @@ resource aks 'Microsoft.ContainerService/managedClusters@2021-02-01' = {
     type: 'SystemAssigned'
   }
   properties: {
-    kubernetesVersion: kubernetesVersion
+    // kubernetesVersion: kubernetesVersion
     enableRBAC: true
     dnsPrefix: dnsPrefix
     addonProfiles:{
@@ -107,7 +106,7 @@ resource aks 'Microsoft.ContainerService/managedClusters@2021-02-01' = {
     }
     nodeResourceGroup: nodeResourceGroup
     networkProfile: {
-      networkPlugin: 'kubenet'
+      networkPlugin: networkPlugin
       loadBalancerSku: 'standard'
       serviceCidr: serviceCidr
       dnsServiceIP: dnsServiceIP

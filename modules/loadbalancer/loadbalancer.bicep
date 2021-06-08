@@ -59,10 +59,10 @@ resource loadbalancer 'Microsoft.Network/loadBalancers@2020-07-01' = {
         name: 'LBRule'
         properties: {
           frontendIPConfiguration: {
-            id: concat(webLbId,'/frontendIPConfigurations/LoadBalancerFrontEnd')
+            id: '${webLbId}/frontendIPConfigurations/LoadBalancerFrontEnd'
           }
           backendAddressPool: {
-            id: concat(webLbId,'/backendAddressPools/BackendPool1')
+            id: '${webLbId}/backendAddressPools/BackendPool1'
           }
           protocol: 'Tcp'
           frontendPort: 80
@@ -70,7 +70,7 @@ resource loadbalancer 'Microsoft.Network/loadBalancers@2020-07-01' = {
           enableFloatingIP: false
           idleTimeoutInMinutes: 5
           probe: {
-            id: concat(webLbId,'/probes/tcpProbe')
+            id: '${webLbId}/probes/tcpProbe'
           }
         }
       }

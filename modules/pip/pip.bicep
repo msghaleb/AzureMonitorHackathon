@@ -1,6 +1,6 @@
 
 param publicIpName string
-param publicIpDnsLabel string = toLower(substring(concat('${publicIpName}', uniqueString(resourceGroup().id)), 0, 15))
+param publicIpDnsLabel string = toLower(substring('${publicIpName}${uniqueString(resourceGroup().id)}', 0, 15))
 
 param location string = resourceGroup().location
 

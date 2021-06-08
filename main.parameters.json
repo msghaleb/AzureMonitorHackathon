@@ -4,7 +4,7 @@
   "parameters": {
     "envPrefixName": {
       "type": "string",
-      "value": "mog00"
+      "value": "mog10"
     },
     "adminUserName": {
       "type": "string",

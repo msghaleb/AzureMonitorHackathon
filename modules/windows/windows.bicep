@@ -11,10 +11,12 @@ param adminUsername string = 'vmadmin'
 param nsgID string = ''
 
 // Type of authentication to use on the Virtual Machine. SSH key is recommended.
+/*
 @allowed([
   'password'
 ])
 param authenticationType string = 'password'
+*/
 
 // SSH Key or password for the Virtual Machine. SSH key is recommended.
 param adminPasswordOrKey string
@@ -61,7 +63,7 @@ param WindowsOffer string = 'WindowsServer'
 param vmSize string = 'Standard_D2_v3'
 
 // Name of the VNET.
-param virtualNetworkName string = 'vNet'
+// param virtualNetworkName string = 'vNet'
 
 // Name of the subnet reference
 param subnetRef string

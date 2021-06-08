@@ -84,7 +84,7 @@ resource sa 'Microsoft.Storage/storageAccounts@2021-01-01' = {
   }
 }
 
-output storageAccountName string = '${storageaccountName}'
+output storageAccountName string = storageaccountName
 output storageAccountKey  string = listKeys(sa.name, sa.apiVersion).keys[0].value
 output storageAccountUri  string = sa.properties.primaryEndpoints.blob
 output storageAccountId string = sa.id

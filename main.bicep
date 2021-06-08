@@ -10,9 +10,9 @@ param adminUserName string = 'vmadmin'
 
 @secure()
 param adminUserPass string
-param laName string = toLower(substring(concat('logaworks', uniqueString(resourceGroup().id)), 0, 20))
+param laName string = toLower(substring('logaworks${uniqueString(resourceGroup().id)}', 0, 20))
 //param keyvaultName string = toLower(substring(concat('keyvault', uniqueString(resourceGroup().id)), 0, 20))
-param appInsightsName string = toLower(concat(envPrefixName,'az-mo-ht-appinsights'))
+param appInsightsName string = toLower('${envPrefixName}az-mo-ht-appinsights')
 param location string = resourceGroup().location
 
 @allowed([
@@ -450,10 +450,10 @@ param feNsgsecurityRules array = [
   }
 ]
 
-param vmssName string = concat(envPrefixName,'azmonvmss')
-param namingInfix string = toLower(substring(concat(vmssName, uniqueString(resourceGroup().id)), 0, 9))
+param vmssName string = '${envPrefixName}azmonvmss'
+param namingInfix string = toLower(substring('${vmssName}${uniqueString(resourceGroup().id)}', 0, 9))
 
-var webSrvSubnetRef = resourceId('Microsoft.Network/virtualNetworks/subnets', concat(envPrefixName,'azmhVnet'), 'FESubnetName')
+var webSrvSubnetRef = resourceId('Microsoft.Network/virtualNetworks/subnets', '${envPrefixName}azmhVnet', 'FESubnetName')
 
 var appName = appInsightsName
 var priceCode = 1
@@ -467,10 +467,10 @@ var dailyQuota = 100
 var dailyQuotaResetTime = 24
 var warningThreshold = 90
 
-var pingname_var = 'eShopPingTest'
-var pingguid = guid(subscription().id)
-var pingexpected = 200
-
+// var pingname_var = 'eShopPingTest'
+// var pingguid = guid(subscription().id)
+// var pingexpected = 200
+/*
 param testlocations array = [
   {
     Id: 'us-il-ch1-azr'
@@ -482,6 +482,7 @@ param testlocations array = [
     Id: 'us-tx-sn1-azr'
   }
 ]
+*/
 
 module storage 'modules/sa/sa.bicep' = {
   name: 'storagedeployment'
@@ -493,13 +494,13 @@ module storage 'modules/sa/sa.bicep' = {
 module dbnsg 'modules/nsg/nsg.bicep' = {
   name: 'dbnsgdeployment'
   params: {
-    networkSecurityGroupName: concat(envPrefixName,'dbNsg')
+    networkSecurityGroupName: '${envPrefixName}dbNsg'
     securityRules : dbNsgsecurityRules
   }
 }
 
 resource dbNSGN_Microsoft_Insights_setForSecurity 'Microsoft.Network/networkSecurityGroups/providers/diagnosticSettings@2017-05-01-preview' = {
-  name: concat(envPrefixName,'dbNsg/Microsoft.Insights/setForSecurity')
+  name: '${envPrefixName}dbNsg/Microsoft.Insights/setForSecurity'
   location: resourceGroup().location
   properties: {
     workspaceId: lawsdeployment.outputs.laWsResourceId
@@ -528,13 +529,13 @@ resource dbNSGN_Microsoft_Insights_setForSecurity 'Microsoft.Network/networkSecu
 module fensg 'modules/nsg/nsg.bicep' = {
   name: 'fensgdeployment'
   params: {
-    networkSecurityGroupName: concat(envPrefixName,'feNsg')
+    networkSecurityGroupName: '${envPrefixName}feNsg'
     securityRules : feNsgsecurityRules
   }
 }
 
 resource feNSG_Microsoft_Insights_setForSecurity 'Microsoft.Network/networkSecurityGroups/providers/diagnosticSettings@2017-05-01-preview' = {
-  name: concat(envPrefixName,'feNsg/Microsoft.Insights/setForSecurity')
+  name: '${envPrefixName}feNsg/Microsoft.Insights/setForSecurity'
   location: resourceGroup().location
   properties: {
     workspaceId: lawsdeployment.outputs.laWsResourceId
@@ -563,7 +564,7 @@ resource feNSG_Microsoft_Insights_setForSecurity 'Microsoft.Network/networkSecur
 module vnet 'modules/vnet/vnet.bicep' = {
   name: 'vnetdeployment'
   params: {
-    virtualNetworkName: concat(envPrefixName,'azmhVnet')
+    virtualNetworkName: '${envPrefixName}azmhVnet'
     addressPrefixes: [
       '10.0.0.0/16'
     ]
@@ -593,7 +594,7 @@ module vnet 'modules/vnet/vnet.bicep' = {
 module sqlPip 'modules/pip/pip.bicep' = {
   name: 'sqlpipdeployment'
   params: {
-    publicIpName: concat(envPrefixName,'azmhSqlPip')
+    publicIpName: '${envPrefixName}azmhSqlPip'
     publicIPAllocationMethod : 'Dynamic'
   }
 }
@@ -601,7 +602,7 @@ module sqlPip 'modules/pip/pip.bicep' = {
 module vsPip 'modules/pip/pip.bicep' = {
   name: 'vspipdeployment'
   params: {
-    publicIpName: concat(envPrefixName,'azmhVsPip')
+    publicIpName: '${envPrefixName}azmhVsPip'
     publicIPAllocationMethod : 'Dynamic'
   }
 }
@@ -609,13 +610,13 @@ module vsPip 'modules/pip/pip.bicep' = {
 module webScaleSetPip 'modules/pip/pip.bicep' = {
   name: 'wsspipdeployment'
   params: {
-    publicIpName: concat(envPrefixName,'azmhWebScaleSetPip')
+    publicIpName: '${envPrefixName}azmhWebScaleSetPip'
     publicIPAllocationMethod : 'Dynamic'
   }
 }
 
 resource webSrvPublicIP_Microsoft_Insights_setByARM 'Microsoft.Network/publicIpAddresses/providers/diagnosticSettings@2017-05-01-preview' = {
-  name: concat(envPrefixName,'azmhWebScaleSetPip/Microsoft.Insights/setByARM')
+  name: '${envPrefixName}azmhWebScaleSetPip/Microsoft.Insights/setByARM'
   location: resourceGroup().location
   properties: {
     workspaceId: lawsdeployment.outputs.laWsResourceId
@@ -641,7 +642,7 @@ resource webSrvPublicIP_Microsoft_Insights_setByARM 'Microsoft.Network/publicIpA
 module vswindows 'modules/windows/windows.bicep' = {
   name: 'vsdeployment'
   params: {
-    vmName              : concat(envPrefixName,'azmhVSSrv')
+    vmName              : '${envPrefixName}azmhVSSrv'
     vmSize              : 'Standard_D4s_v3'
     windowsOSVersion    : 'vs-2019-comm-latest-win10-n'
     MicrosoftWindowsPublisher : 'MicrosoftVisualStudio'
@@ -658,7 +659,7 @@ module vswindows 'modules/windows/windows.bicep' = {
 module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
   name: 'vmextvsdeployment'
   params: {
-    vmExtName: concat(envPrefixName,'azmhVSSrv/VSSrvCustomScriptExtension')
+    vmExtName: '${envPrefixName}azmhVSSrv/VSSrvCustomScriptExtension'
     vmExtPublisher: 'Microsoft.Compute'
     vmExtType: 'CustomScriptExtension'
     vmExttypeHandlerVersion: '1.9'
@@ -667,7 +668,7 @@ module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
       fileUris: [
         'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
       ]
-      commandToExecute: concat('powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ',concat(envPrefixName,'azmhSQLSrv'),' ',adminUserPass)
+      commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ${envPrefixName}azmhSQLSrv ${adminUserPass}'
     } 
   }
   dependsOn:[
@@ -679,7 +680,7 @@ module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
 module sqlwindows 'modules/windows/windows.bicep' = {
   name: 'sqldeployment'
   params: {
-    vmName                    : concat(envPrefixName,'azmhSQLSrv')
+    vmName                    : '${envPrefixName}azmhSQLSrv'
     vmSize                    : 'Standard_DS3_v2'
     windowsOSVersion          : 'Standard'
     MicrosoftWindowsPublisher : 'MicrosoftSQLServer'
@@ -695,7 +696,7 @@ module sqlwindows 'modules/windows/windows.bicep' = {
 module sqlwindowsvmext 'modules/vmextension/vmextension.bicep' = {
   name: 'vmextsqldeployment'
   params: {
-    vmExtName: concat(envPrefixName,'azmhSQLSrv/WADExtensionSetup')
+    vmExtName: '${envPrefixName}azmhSQLSrv/WADExtensionSetup'
     vmExtPublisher: 'Microsoft.ManagedIdentity'
     vmExtType: 'ManagedIdentityExtensionForWindows'
     vmExttypeHandlerVersion: '1.0'
@@ -712,7 +713,7 @@ module sqlwindowsvmext 'modules/vmextension/vmextension.bicep' = {
 module sqldiagwindowsvmext 'modules/vmextension/vmextension.bicep' = {
   name: 'sqldiagextvsdeployment'
   params: {
-    vmExtName: concat(envPrefixName,'azmhSQLSrv/VMDiagnosticsSettings')
+    vmExtName: '${envPrefixName}azmhSQLSrv/VMDiagnosticsSettings'
     vmExtPublisher: 'Microsoft.Azure.Diagnostics'
     vmExtType: 'IaaSDiagnostics'
     vmExttypeHandlerVersion: '1.5'
@@ -789,7 +790,7 @@ module sqldiagwindowsvmext 'modules/vmextension/vmextension.bicep' = {
 module sqliaaswindowsvmext 'modules/vmextension/vmextension.bicep' = {
   name: 'vmextsqliaasdeployment'
   params: {
-    vmExtName: concat(envPrefixName,'azmhSQLSrv/SqlIaasExtension')
+    vmExtName: '${envPrefixName}azmhSQLSrv/SqlIaasExtension'
     vmExtPublisher: 'Microsoft.SqlServer.Management'
     vmExtType: 'SqlIaaSAgent'
     vmExttypeHandlerVersion: '1.2'
@@ -829,7 +830,7 @@ module sqliaaswindowsvmext 'modules/vmextension/vmextension.bicep' = {
 module sqldepagentwindowsvmext 'modules/vmextension/vmextension.bicep' = {
   name: 'sqldepagentextvsdeployment'
   params: {
-    vmExtName: concat(envPrefixName,'azmhSQLSrv/DependencyAgent')
+    vmExtName: '${envPrefixName}azmhSQLSrv/DependencyAgent'
     vmExtPublisher: 'Microsoft.Azure.Monitoring.DependencyAgent'
     vmExtType: 'DependencyAgentWindows'
     vmExttypeHandlerVersion: '9.4'
@@ -843,7 +844,7 @@ module sqldepagentwindowsvmext 'modules/vmextension/vmextension.bicep' = {
 module sqllapwindowsvmext 'modules/vmextension/vmextension.bicep' = {
   name: 'sqllapextvsdeployment'
   params: {
-    vmExtName: concat(envPrefixName,'azmhSQLSrv/laPolicy')
+    vmExtName: '${envPrefixName}azmhSQLSrv/laPolicy'
     vmExtPublisher: 'Microsoft.EnterpriseCloud.Monitoring'
     vmExtType: 'MicrosoftMonitoringAgent'
     vmExttypeHandlerVersion: '1.0'
@@ -941,14 +942,14 @@ resource pingname 'Microsoft.Insights/webtests@2015-05-01' = {
 module loadbalancerdeployment 'modules/loadbalancer/loadbalancer.bicep' = {
   name: 'loadbalancerdeployment'
   params:{
-    webLbName: concat(envPrefixName,'vmsswebsrvlb')
+    webLbName: '${envPrefixName}vmsswebsrvlb'
     webLbPipId: webScaleSetPip.outputs.id
     skuName: 'Basic'
   }
 }
 
 resource webLbName_Microsoft_Insights_setByARM 'Microsoft.Network/loadBalancers/providers/diagnosticSettings@2017-05-01-preview' = {
-  name: concat(envPrefixName,'vmsswebsrvlb/Microsoft.Insights/setByARM')
+  name: '${envPrefixName}vmsswebsrvlb/Microsoft.Insights/setByARM'
   location: resourceGroup().location
   properties: {
     workspaceId: lawsdeployment.outputs.laWsResourceId
@@ -1056,7 +1057,7 @@ resource vmssdeployment 'Microsoft.Compute/virtualMachineScaleSets@2020-06-01' =
                 fileUris: [
                   'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupWebServers.ps1'
                 ]
-                commandToExecute: concat('powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ',concat(envPrefixName,'azmhVSSrv'),' ',adminUserName,' ',adminUserPass)
+                commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ${envPrefixName}azmhVSSrv ${adminUserName} ${adminUserPass}'
               }
             }
           }
@@ -1420,9 +1421,9 @@ module aksdeployment 'modules/aks/aks.bicep' = {
   params:{
     subnetRef: vnet.outputs.subnetRef[2]
     omsWorkspaceId: lawsdeployment.outputs.laWsResourceId
-    dnsPrefix: concat(envPrefixName, 'azhtaksdnsname')
+    dnsPrefix: '${envPrefixName}azhtaksdnsname'
     clusterName: envPrefixName
-    nodeResourceGroup: concat('MC_',envPrefixName, '-AKS-nodes-rg')
+    nodeResourceGroup: 'MC_${envPrefixName}-AKS-nodes-rg'
   
   }
 }
