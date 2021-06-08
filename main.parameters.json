@@ -3,9 +3,11 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "envPrefixName": {
-      "value": "moga0"
+      "type": "string",
+      "value": "mog00"
     },
     "adminUserName": {
+      "type": "string",
       "value": "vmadmin"
     }
 
