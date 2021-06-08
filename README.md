@@ -18,7 +18,9 @@ Once you deployed the Hackathon you will see two Azure Resource Groups with diff
 ## Initial deployment
 This micro Hackathon is designed to be deployed on a subscription level to roll out a set of resources that are used throughout the challenges. 
 Follow the below step to run the initial deployment:
-> **Time saver tip:** Use Azure Shell, you can use [Windows Termin to open your Azure Shell](https://devblogs.microsoft.com/commandline/the-azure-cloud-shell-connector-in-windows-terminal/) and run the code there.
+> **Time saver tip:** 
+> - Use Azure Shell, you can use [Windows Termin to open your Azure Shell](https://devblogs.microsoft.com/commandline/the-azure-cloud-shell-connector-in-windows-terminal/) and run the code there.
+> - Use the latest cli / bicep versions 
 
  - Download and install git ([click here](https://git-scm.com/downloads))
  - Download and install VS code ([click here](https://code.visualstudio.com/Download))
