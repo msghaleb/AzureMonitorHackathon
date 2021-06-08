@@ -18,6 +18,7 @@ Once you deployed the Hackathon you will see two Azure Resource Groups with diff
 ## Initial deployment
 This micro Hackathon is designed to be deployed on a subscription level to roll out a set of resources that are used throughout the challenges. 
 Follow the below step to run the initial deployment:
+> **Time saver tip:** Use Azure Shell, you can use [Windows Termin to open your Azure Shell](https://devblogs.microsoft.com/commandline/the-azure-cloud-shell-connector-in-windows-terminal/) and run the code there.
 
  - Download and install git ([click here](https://git-scm.com/downloads))
  - Download and install VS code ([click here](https://code.visualstudio.com/Download))
@@ -37,7 +38,7 @@ az group create --location westus --resource-group azuremon-mogas-rg
 > **Tip:** feel free to change the rg name and location as needed
 - Open the `main.parameters.json` file in code and modify the `envPrefixName` parameter value with your own unique 5 characters you used above
 - By default you will be asked for a password during the deployment, this will be used for all VMs and the SQL DB, if you prefer to add it to the `main.parameters.json` feel free to do you
-- Now you can kick-off the initial deployment by running:
+- Now you can kick off the initial deployment by running, **replace the rg name with yours**:
 ```
 az deployment group create `
 	--name firstbicep `
