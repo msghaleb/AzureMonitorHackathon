@@ -1,6 +1,10 @@
 # Azure Monitor Hackathon
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
+## Before we start
+If you fork this Repo, and updated it feel free to open a Pull Request - the more comments the better so that we can keep everything maintained in once place :) I'll add your name into the BIG THANK YOU LIST :)
+
+Please use Firefox when testing the eShop, wanna fix the bug? see above ;-)  
 ## About the Hackathon
 This hackathon is aiming to walk you though the different features of Azure Monitor, the design proposed here is not a recommendation it's for learning purposes only. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights.
 
