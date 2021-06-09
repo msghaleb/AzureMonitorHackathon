@@ -3,16 +3,16 @@
 The aim of the first challenge is to understand....
 
 ### Main Objective;
-We will learn here move about Container Monitoring and how does it work
+In this challenge we will learn more about Container Monitoring and how it works
 
 ### Tasks to finish the Challenge:
-- Deploy the eShoponWeb application to a local container and make sure its running
-- Deploy the eShoponWeb application to an AKS and make sure its running
+- Deploy the eShoponWeb application to a local container and make sure it is running
+- Deploy the eShoponWeb application to an AKS cluster and make sure it is running
 
 
 ### Definition of Done:
-- Generate an exception and show it in the containers logs
-- Can you also see the exception in the Application Insights? 
+- Generate an exception and show it in the container logs
+- Are you also able to see the exception in Application Insights? 
 - Can you see the container insights live logs?
 
 #### Helpful links:

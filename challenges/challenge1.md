@@ -1,11 +1,11 @@
 
 ## Challenge 1: Monitoring Basics, Dashboards and Alerts
 
-The aim of the first challenge is to understand how telemetry is collected from VMs running on Azure. Azure monitor and the associated sink are leveraged to collect telemetry directly into Azure monitor for dashboarding and alerting purposes.
+The aim of this first challenge is to understand how telemetry is collected from VMs running on Azure. Azure Monitor and the associated sink are leveraged to collect telemetry directly into Azure Monitor for dashboarding and alerting purposes.
 
 Feel free to achieve this objective using the Azure Portal or by modifying the bicep code. 
 
-> **Tip:** If you decided to use code think about managed identities and VM extensions.
+> **Tip:** If you decide to use code think about managed identities and VM extensions.
 
 ### Main Objective:
 Understand the concept of counters, how to collect them as well as how to configure Alerts and display them in a Dashboard.    
@@ -31,7 +31,7 @@ Show the dashboard with the metric in it, which should also show a spike represe
 
 
 #### Helpful links:
-- [HammerDB](www.hammerdb.com)
+- [HammerDB](https://www.hammerdb.com)
 - [Finding the counter](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-counter?view=powershell-5.1)
 - [In case you will modify the code (keep in mind you need to convert to bicep and match the syntax)](https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/collect-custom-metrics-guestos-resource-manager-vm)
 - [Converting to bicep and bicep playground](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/bicep-decompile?tabs=azure-cli)
