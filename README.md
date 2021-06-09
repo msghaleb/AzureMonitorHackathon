@@ -2,7 +2,7 @@
 
 ![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)
 ## Before we start
-If you fork this Repo, and updated it feel free to open a Pull Request - the more comments the better so that we can keep everything maintained in once place :) I'll add your name into the BIG THANK YOU LIST :)
+If you fork this Repo, and updated it feel free to open a Pull Request - the more comments the better so that I know what you have updated :) in addition, I'll add your name into the BIG THANK YOU LIST below :)
 
 Please use Firefox when testing the eShop, wanna fix the bug? see above ;-)  
 ## About the Hackathon
