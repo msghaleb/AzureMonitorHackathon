@@ -36,17 +36,13 @@ In the beginning of this hackathon, you will deploy an environment in Azure that
 ![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/initial_design.jpg)
 
   
-  
+## Initial Deployment
+The initial deployment will create the components shown in the architecture above and is the basis for the challenges in this hackathon.
+To deploy the components, please follow the steps in [this deployment section](deployment/README.md)
 
 ## The Challenges
 
-This Hackathon consists of 8 challenges. Challenge 0 is the initial deployment that will be the basis for all the other challenges.
-
-Please complete the challenges in order.
-
-  
-
--  [Challenge 0: Initial deployment](challenges/challenge0.md)
+This Hackathon consists of 8 challenges. Please complete the challenges in order.
 
 -  [Challenge 1: The Basics, Dashboards and Alerts](challenges/challenge1.md)
 
