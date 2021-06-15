@@ -58,7 +58,6 @@ This Hackathon consists of 8 challenges. Please complete the challenges in order
 
 -  [Challenge 7: Workbooks](challenges/challenge7.md)
 
--  [Challenge 8: Network Monitoring](challenges/challenge8.md)
 
   
 
