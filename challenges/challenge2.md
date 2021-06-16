@@ -10,7 +10,7 @@ Understand how to configure Azure Update Management and how to keep your VMs up-
 ### Tasks to finish the Challenge
 - Start / Stop a VM
 - Check the Activity Logs to see the events of starting or stopping a VM
-- Create an Alert for the Visual Studio VM to be notified if the VM has been stopped
+- Create an Alert for the VM to be notified if the VM has been stopped
 - Stop the VM, and see if you got the Alert
 - Use Azure Update Management to keep your VMs up-to-date on a daily basis.
 
