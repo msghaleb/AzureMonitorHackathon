@@ -1,7 +1,3 @@
-/* 
-TODO: 
--- Reading VARs from KV?
-*/
 @maxLength(5)
 @minLength(2)
 param envPrefixName string = toLower('mogas')
