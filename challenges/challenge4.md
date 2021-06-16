@@ -1,6 +1,6 @@
 ## Challenge 4:  Containers Monitoring
 
-The aim of the first challenge is to understand....
+The aim of the first challenge is to understand container Monitoring and how it works.
 
 ### Main Objective;
 In this challenge we will learn more about Container Monitoring and how it works
