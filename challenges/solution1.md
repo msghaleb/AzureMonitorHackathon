@@ -43,7 +43,7 @@ Once its finished, review the results (scroll up) and copy the output for the
   
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image7.png)  
 Now replace the "*" with the target database to be:
-`\\SQLServer:Databases(tpcc)\\Active Transactions`
+`\SQLServer:Databases(tpcc)\Active Transactions`
   
 Open your VM on the Azure Portal, then go to diagnostic settings and add the counter under performance counters as shown below:
   
