@@ -15,7 +15,7 @@ Follow the below step to run the initial deployment:
  - Create a resource group, please use up to 5 unique characters (small letters or numbers) of your choice within the RG name, e.g. `azuremon-mogas-rg`. In this case, the 5 characters are `mogas`.
 To create the resource group run: 
 ```
-az group create --location westeurope --resource-group azuremon-mogas-rg
+az group create --location westeurope --resource-group azuremon-[your-5-unique-characters]-rg
  ```
 > **Tip:** feel free to change the rg name and location as needed
 - Open the `main.parameters.json` file in VS Code and modify the `envPrefixName` parameter value with your own unique 5 characters [yourPrefix] you used above
@@ -24,7 +24,7 @@ az group create --location westeurope --resource-group azuremon-mogas-rg
 ```
 az deployment group create `
 	--name firstbicep `
-	-g azuremon-[yourPrefix]-rg `
+	-g azuremon-[your-5-unique-characters]-rg `
 	-f main.bicep `
 	-p main.parameters.json
 ```
