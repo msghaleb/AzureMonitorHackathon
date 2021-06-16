@@ -59,7 +59,7 @@ Now, let's move on to publishing the app to AKS.
 
 ![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image82.png)     
 - Next, navigate to the Connected Services for Web.
-- Configure Application Insights to Azure Application Insights, select
+- Configure Application Insights to be Azure Application Insights
 - Your App Insights resource and **Save connection string value in None**
 - Configure SQL DB CatalogConnection to point to SQL Server Database
 - Update connection string(s) using the Catalog string found in **appsettings.json** and **Save connection string in None**.
