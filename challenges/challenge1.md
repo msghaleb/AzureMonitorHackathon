@@ -1,5 +1,5 @@
 
-## Challenge 1:  Service Health & Activity Logs
+## Challenge 1: Activity Log & Service Health
 
 **Activity Logs** are everything happening to your resources on the API level. The Activity log is a platform log in Azure that provides insights into subscription-level events. This includes information such as when a resource is modified or when a virtual machine is started.
 
@@ -32,6 +32,7 @@
 
 #### Helpful links:
 - [Alerts on activity log](https://docs.microsoft.com/en-us/azure/azure-monitor/alerts/activity-log-alerts)
+- [Understand Azure Service Health](https://docs.microsoft.com/en-us/azure/service-health/overview)
 
 ### The Solution
 
