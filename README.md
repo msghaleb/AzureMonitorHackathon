@@ -44,7 +44,7 @@ To deploy the components, please follow the steps in [this deployment section](d
 
 This Hackathon consists of 8 challenges. Please complete the challenges in order.
 
--  [Challenge 1: Service Health & Activity Logs](challenges/challenge1.md)
+-  [Challenge 1: Activity Log & Service Health](challenges/challenge1.md)
 
 -  [Challenge 2: The Basics, Dashboards and Alerts](challenges/challenge2.md)
 
