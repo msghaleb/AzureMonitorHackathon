@@ -4,6 +4,13 @@
 This page will take you step by step through solving challenge two.
 
 ## Solution Steps:
+
+### Activity Log integration with Log Analytics
+
+
+
+### Activity Log alerts
+
 - Login to your portal and stop you Visual Studio VM  
 
 ![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/stopVM.png)
@@ -23,13 +30,23 @@ Then you will need to **Add condition**, filter for **Activity log - Administrat
 
 ![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/addconditiondeallocate.png)  
 
-  
-**The Bonus part (Optional)**
+### Service Health
+
+To pin the Service issues map to your dashboard, in the Azure Portal search for 'Service Health', click on 'Service issues', select your subscription and region and click on the pin icon.
+
+To perform a custom log query, go to your log analytics workspace, click on 'Logs' and use the following Kusto query:
+``` 
+AzureActivity | where CategoryValue == 'ResourceHealth'
+ ```
+
+### The Bonus question
 
 **Will the Alert get fired if the VM was turned off from the OS? or if the VM was not available? why?**
 No, as opposed to deallocation, powering off a Microsoft Azure virtual machine (VM) will release the hardware but it will preserve the network resources (internal and public IPs) provisioned for it. Even if the VM`s network components are preserved, once the virtual machine is powered off, the cloud application(s) installed on it will become unavailable. The only scenario in which you should ever choose the stopped state instead of the deallocated state for a VM in Azure is if you are only briefly stopping the server and would like to keep the dynamic IP address for your testing. If that doesn’t perfectly describe your use case, or you don’t have an opinion one way or the other, then you’ll want to deallocate instead so you aren’t being charged for the VM.
 
-  
+**Does sending the Activity Log to your Log Analytics workspace cause costs?**
+
+ 
 First team to share a screenshot of the new Alert Rules and New Action Rule wins the challenge!!
 Good luck!
 
