@@ -19,7 +19,7 @@
   - Create an Alert for the VM to be notified if the VM has been stopped
   - Stop the VM, and see if you got the alert
 3) Service Health
-  - Pin the Service Health tile to your dashboard
+  - Pin the Service issues map to your dashboard
   - Perform a custom log query on your Activity Logs to see if there's any recent entries regarding Resource Health.
 
 #### Bonus question/task:
