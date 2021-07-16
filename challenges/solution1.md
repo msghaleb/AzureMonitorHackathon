@@ -1,7 +1,6 @@
 
 # Challenge 1: The Solution
-
-This page will take you step by step through solving challenge two.
+This page will take you step by step through solving challenge 1.
 
 ## Solution Steps:
 
@@ -45,11 +44,7 @@ AzureActivity | where CategoryValue == 'ResourceHealth'
 No, as opposed to deallocation, powering off a Microsoft Azure virtual machine (VM) will release the hardware but it will preserve the network resources (internal and public IPs) provisioned for it. Even if the VM`s network components are preserved, once the virtual machine is powered off, the cloud application(s) installed on it will become unavailable. The only scenario in which you should ever choose the stopped state instead of the deallocated state for a VM in Azure is if you are only briefly stopping the server and would like to keep the dynamic IP address for your testing. If that doesn’t perfectly describe your use case, or you don’t have an opinion one way or the other, then you’ll want to deallocate instead so you aren’t being charged for the VM.
 
 **Does sending the Activity Log to your Log Analytics workspace cause costs?**
-
- 
-First team to share a screenshot of the new Alert Rules and New Action Rule wins the challenge!!
-Good luck!
-
+Although Activity Logs are available for a 90-day period at no charge and associated alerts & API calls are also for free, sending the Activity Log to a Log analytics workspace will incurr charges. You will get billed for every GB that you ingest into the workspace as well as for every GB of data retention beyond the free 31-day period.
   
 
   
