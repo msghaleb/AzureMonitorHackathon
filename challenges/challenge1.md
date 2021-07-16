@@ -24,6 +24,7 @@
 
 #### Bonus question/task:
 - Will the Activity Log Alert get fired if the VM was turned off from the OS? Or if the VM was not available? Why/why not?
+- Does sending the Activity Log to your Log Analytics workspace cause costs?
 
 ### Definition of Done:
 - You have successfully integrated Azure Activity Log with your LAW 
