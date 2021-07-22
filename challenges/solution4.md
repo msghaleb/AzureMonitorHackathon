@@ -1,7 +1,7 @@
 
-# Challenge 5: The Solution
+# Challenge 4: The Solution
 
-This page will take you step by step through solving challenge five.
+This page will take you step by step through solving challenge four.
 
 ## Solution Steps:
 We will write a performance query that renders a time chart for the last 4 hours for both of the Web Servers and the SQL Server for the following perf metrics, and we will save each query to our favorites.
