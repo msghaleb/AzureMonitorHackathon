@@ -1,5 +1,5 @@
 
-# Challenge 7: Workbooks
+# Challenge 3: Workbooks
 
 - Navigate to your Application Insights resource in the Portal
 - Click on Workbooks New
