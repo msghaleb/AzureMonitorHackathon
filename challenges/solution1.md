@@ -6,6 +6,10 @@ This page will take you step by step through solving challenge 1.
 
 ### Activity Log integration with Log Analytics
 
+To send the Activity log to Azure Monitor Logs you should use Diagnostic Settings.
+In the Azure Portal, search for and then select 'Activity log'. You should see recent events for the current subscription. Click 'Diagnostic settings' and then 'Add diagnostic setting' to create a new setting.
+Type in a name, select each of the categories, and choose 'Send to Log Analytics', where you can select your workspace. Click 'Save' to create the setting.
+In Log Analytics, you can check the integration by selecting the 'Azure Activity log' option below 'Workspace Data Sources'. Your subscription should show as 'Connected'.
 
 
 ### Activity Log alerts
