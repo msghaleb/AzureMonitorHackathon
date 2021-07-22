@@ -1,4 +1,4 @@
-## Challenge 3:  Application Insights
+## Challenge 7:  Application Insights
 
 The aim of the first challenge is to understand....
 
@@ -35,4 +35,4 @@ The aim of the first challenge is to understand....
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 3: The solution](solution3.md)
+[Challenge 7: The solution](solution7.md)
