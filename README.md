@@ -50,9 +50,9 @@ This Hackathon consists of 8 challenges. Please complete the challenges in order
 
 -  [Challenge 3: Workbooks](challenges/challenge3.md)
 
--  [Challenge 4: Containers Monitoring](challenges/challenge4.md)
+-  [Challenge 4: KQL Queries](challenges/challenge4.md)
 
--  [Challenge 5: KQL Queries](challenges/challenge5.md)
+-  [Challenge 5: Containers Monitoring](challenges/challenge5.md)
 
 -  [Challenge 6: Grafana and Analytics](challenges/challenge6.md)
 
