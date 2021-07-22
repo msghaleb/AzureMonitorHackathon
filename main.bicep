@@ -18,13 +18,13 @@ param location string = resourceGroup().location
 param numberOfWebSrvs int = 2
 param ladatasource object = {
   datasources: [
-    {
-      name: '${laName}/AzureActivityLog'
-      kind: 'AzureActivityLog'
-      properties: {
-        linkedResourceId: '${subscription().id}/providers/Microsoft.Insights/eventTypes/management'
-      }
-    }
+    //{
+      //name: '${laName}/AzureActivityLog'
+      //kind: 'AzureActivityLog'
+      //properties: {
+        //linkedResourceId: '${subscription().id}/providers/Microsoft.Insights/eventTypes/management'
+      //}
+    //}
     {
       name: '${laName}/LogicalDisk1'
       kind: 'WindowsPerformanceCounter'
