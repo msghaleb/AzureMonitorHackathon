@@ -48,7 +48,7 @@ This Hackathon consists of 8 challenges. Please complete the challenges in order
 
 -  [Challenge 2: The Basics, Dashboards and Alerts](challenges/challenge2.md)
 
--  [Challenge 3: Application Insights](challenges/challenge3.md)
+-  [Challenge 3: Workbooks](challenges/challenge3.md)
 
 -  [Challenge 4: Containers Monitoring](challenges/challenge4.md)
 
@@ -56,7 +56,7 @@ This Hackathon consists of 8 challenges. Please complete the challenges in order
 
 -  [Challenge 6: Grafana and Analytics](challenges/challenge6.md)
 
--  [Challenge 7: Workbooks](challenges/challenge7.md)
+-  [Challenge 7: Application Insights](challenges/challenge7.md)
 
 -  [Challenge 8: Update Management](challenges/challenge8.md)
   
