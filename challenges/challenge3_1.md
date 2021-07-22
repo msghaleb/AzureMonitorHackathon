@@ -1,4 +1,4 @@
-## Challenge 7:  Workbooks
+## Challenge 3:  Workbooks
 
 The aim of the first challenge is to understand what is Azure Workbooks and how to create them
 
@@ -33,4 +33,4 @@ Create a workbook with sections that report on the performance of your eShopWeb 
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 7: The solution](solution7.md)
+[Challenge 3: The solution](solution3.md)
