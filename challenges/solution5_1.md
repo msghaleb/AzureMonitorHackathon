@@ -1,7 +1,7 @@
 
-# Challenge 4: The Solution
+# Challenge 5: The Solution
 
-This page will take you step by step through solving challenge four.
+This page will take you step by step through solving challenge five.
 
 ## Solution Steps:
 
