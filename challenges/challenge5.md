@@ -1,4 +1,4 @@
-## Challenge 5:  KQL Queries
+## Challenge 4:  KQL Queries
 
 The aim of this challenge is to understand the Kusto Query Language (KQL)
 
@@ -31,4 +31,4 @@ How can we save our log queries and share them across multiple workspaces?
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 5: The solution](solution5.md)
+[Challenge 4: The solution](solution4.md)
