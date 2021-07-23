@@ -76,4 +76,4 @@ When the test is running it should look like the screenshot below:
 ### The Solution
 
 Are you sure? finished trying? ;-) 
-[Challenge 1: The solution](solution1.md)
+[Challenge 2: The solution](solution2.md)
