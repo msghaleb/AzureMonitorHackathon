@@ -1,7 +1,7 @@
 
 ## Challenge 2: Monitoring Basics, Dashboards and Alerts
 
-The aim of this first challenge is to understand how telemetry is collected from VMs running on Azure. Azure Monitor and the associated sink are leveraged to collect telemetry directly into Azure Monitor for dashboarding and alerting purposes.
+The aim of this second challenge is to understand how telemetry is collected from VMs running on Azure. Azure Monitor and the associated sink are leveraged to collect telemetry directly into Azure Monitor for dashboarding and alerting purposes.
 
 Feel free to achieve this objective using the Azure Portal or by modifying the bicep code. 
 
