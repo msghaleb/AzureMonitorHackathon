@@ -1,6 +1,6 @@
 ## Challenge 7:  Application Insights
 
-The aim of the first challenge is to understand....
+The aim of the seventh challenge is to understand....
 
 ### Main Objective:
 
