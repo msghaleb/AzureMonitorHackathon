@@ -8,20 +8,20 @@ First we will make sure they are all reporting to our demo Log Analytics Workspa
 - To do that go to our Resource group, open the Log Analytics Workspace
 - Go to Virtual Machines and put your 5 unique characters, and see if all reporting to this one
   
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/otherws.png)
+![enter image description here](../images/otherws.png)
   
 - If not, click the VM, disconnected it and re-connected to this LA WS.
 - Now create a new Automation Account ([here is how](https://docs.microsoft.com/en-us/azure/automation/automation-quickstart-create-account))
 - Link the Automation Account to your Log Analytics Workspace, go to the newly created Azure Automation Account, go to update management and link the LA WS as shown below
   
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/azautoaccount.png)  
+![enter image description here](../images/azautoaccount.png)  
 - Enable the Azure Update Management on your VMs, on the same page (you may need to refresh it) go to "Add Azure VMs"
 - Make sure you are on the correct region
 - Check your VMs and click enable (see below)
   
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/enableazautoaccount.png)  
+![enter image description here](../images/enableazautoaccount.png)  
 >**Tip:** If you want to enable all VMs connected to the LA WS automatically (current or current and future, to to Azure Automation Account, then click on "Update Management" on the left, click on "Manage machines" 
->![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/managevms.png)> Pick the option suitable for your environment
+>![enter image description here](../images/managevms.png)> Pick the option suitable for your environment
   
 >**Note:** You may need to wait sometime for the VMs to show up
   
@@ -35,7 +35,7 @@ Here is more information about the different options ([click here](https://docs.
 
 Once you specify all settings, select **Create**.
 
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/updateschdule.png)
+![enter image description here](../images/updateschdule.png)
 Fill it up, click create - you are all set ;-)
 
 To see the status of an update deployment, select the **Update deployments** tab under **Update management**. **In progress** indicates that deployment is currently running. When the deployment is completed, the status will show either “Succeeded” if each update was deployed successfully or “Partially failed” if there were errors for one or more of the updates.

@@ -42,14 +42,14 @@ az deployment group create `
 > once finished, please go to your resource group -> deployments and make sure that there are no errors.
 > If you face any problems check the troubleshooting section at the end of this page
 
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/good_deployment.jpg)
+![enter image description here](../images/good_deployment.jpg)
 
 - Once finished check and note the Public IP fqdn of the scale set 
 >it should be named something like: `mogasWebScaleSetPip` where `mogas` is your unique 5 characters
 
 Open the fqdn in your browser and you should see the shop
 
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/eshop.jpg)
+![enter image description here](../images/eshop.jpg)
 
 
 ### Troubleshooting
@@ -57,7 +57,7 @@ Open the fqdn in your browser and you should see the shop
 -	If the eShop is not logging in, use [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 -	If you get the below error, you can enable Azure Defender for VMs on this subscription, if you can't then ignore the error:
 `Subscription is not in the Standard or Standard Trial subscription plan. Please upgrade to use this feature`
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/bad_deployment.jpg)
+![enter image description here](../images/bad_deployment.jpg)
 -	Make sure the 5-character name does not contain any uppercase letters
 -	Make sure the password used adheres to the Azure password policy
 -	Make sure you are logged in to the correct subscription and you have at least *Contributor* access.  
@@ -69,7 +69,7 @@ Open the fqdn in your browser and you should see the shop
 	2.	If you are stuck on the Visual Studio Custom Script extension (CSE)this is because the Microsoft Image was created with an older version of the CSE and has a bug.  
 		a.	Workaround 1:The workaround has been to log on to the Visual Studio Server and navigate to “C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.2” and double click on “enable” this will kick off the extension and the deployment should continue from here.  If the script times out just rerun after you manually kick off the extension and it should finish
 		b.	Workaround 2: From the Azure Portal uninstall the CustomScriptExtension (which will fail your deployment).
-		![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/uninstall_ext.jpg)
+		![enter image description here](../images/uninstall_ext.jpg)
 		 
 		c.	Then rerun the ARM template and it will pick up where it left off.
 
