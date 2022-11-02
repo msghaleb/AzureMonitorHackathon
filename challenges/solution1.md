@@ -16,22 +16,22 @@ In Log Analytics, you can check the integration by selecting the 'Azure Activity
 
 - Login to your portal and stop you Visual Studio VM  
 
-![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/stopVM.png)
+![enter image description here](../images/stopVM.png)
 - Then Start it again
 - Now check the Activity Log and see the new events (may take a min or two to show up)
 
-![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/vmactivitylog.png)
+![enter image description here](../images/vmactivitylog.png)
 Now there are two way to create an alert, either from the same screen, click on **Deallocate Virtual Machine** and then click on **New Alert rule**  
 
-![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/newalertruleal.png)
+![enter image description here](../images/newalertruleal.png)
   
 Or you can go to **Alerts**, and create a **new Alert Rule**, in this case you need to pick your VM as the resource
 
-![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/newalertrule.png)
+![enter image description here](../images/newalertrule.png)
 
 Then you will need to **Add condition**, filter for **Activity log - Administrative** and pick the **Deallocate Virtual Machine**
 
-![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/addconditiondeallocate.png)  
+![enter image description here](../images/addconditiondeallocate.png)  
 
 ### Service Health
 

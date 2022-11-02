@@ -662,7 +662,7 @@ module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
     vmExtenableAutomaticUpgrade: false
     vmExtsettings: {
       fileUris: [
-        'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
+        'https://raw.githubusercontent.com/kasimrehman/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
       ]
       commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ${envPrefixName}azmhSQLSrv ${adminUserPass}'
     } 
@@ -1051,7 +1051,7 @@ resource vmssdeployment 'Microsoft.Compute/virtualMachineScaleSets@2020-06-01' =
               autoUpgradeMinorVersion: true
               settings: {
                 fileUris: [
-                  'https://raw.githubusercontent.com/msghaleb/AzureMonitorHackathon/master/sources/SetupWebServers.ps1'
+                  'https://raw.githubusercontent.com/kasimrehman/AzureMonitorHackathon/master/sources/SetupWebServers.ps1'
                 ]
                 commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ${envPrefixName}azmhVSSrv ${adminUserName} ${adminUserPass}'
               }

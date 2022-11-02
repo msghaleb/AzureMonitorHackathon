@@ -1,7 +1,7 @@
 
 # Azure Monitor Hackathon
 
-![Azure Monitor Hackathon](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/header.jpg)  
+![Azure Monitor Hackathon](images/header.jpg)  
 This hackathon walks you though the different features of Azure Monitor. Throughout the hackathon you will be working with Azure Monitor, Log Analytics and Application Insights.
 
 At the end of the Hackathon you will understand Azure Monitor capabilities, facilitate an Azure Monitor conversation, and demo key features of Azure Monitor.
@@ -33,7 +33,7 @@ In the beginning of this hackathon, you will deploy an environment in Azure that
 
   
 
-![enter image description here](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/initial_design.jpg)
+![enter image description here](images/initial_design.jpg)
 
   
 ## Initial Deployment

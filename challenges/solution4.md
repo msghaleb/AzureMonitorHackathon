@@ -41,7 +41,7 @@ Perf
 ```
   
   
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image103.png)  
+![](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/image103.png)  
 - Create a heartbeat query for Web and SQL Server
 ```
 Heartbeat
@@ -50,7 +50,7 @@ Heartbeat
 | count 
 ```
   
-![](https://github.com/msghaleb/AzureMonitorHackathon/raw/master/images/image104.png)  
+![](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/image104.png)  
 We will now write a performance query that renders a time chart for the last hour of the max percentage CPU usage of the AKS Cluster nodes
 
 - Solution 1 using maxif
