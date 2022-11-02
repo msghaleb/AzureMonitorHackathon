@@ -640,9 +640,9 @@ module vswindows 'modules/windows/windows.bicep' = {
   params: {
     vmName              : '${envPrefixName}azmhVSSrv'
     vmSize              : 'Standard_D4s_v3'
-    windowsOSVersion    : 'vs-2019-ent-ws2019'
+    windowsOSVersion    : 'vs-2019-ent-latest-ws2019'
     MicrosoftWindowsPublisher : 'MicrosoftVisualStudio'
-    WindowsOffer : 'visualStudio2019'
+    WindowsOffer : 'visualstudio2019latest'
     adminPasswordOrKey  : adminUserPass
     adminUsername       : adminUserName
     useSystemManagedIdentity : true

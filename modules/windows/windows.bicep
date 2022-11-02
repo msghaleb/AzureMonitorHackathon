@@ -40,6 +40,7 @@ param adminPasswordOrKey string
   'rs5-enterprisen-standard-g2'
   'vs-2019-comm-latest-win10-n'
   'vs-2019-ent-ws2019'
+  'vs-2019-ent-latest-ws2019'
   'Standard'
 ])
 param windowsOSVersion string = '2016-Datacenter'
@@ -55,7 +56,7 @@ param MicrosoftWindowsPublisher string = 'MicrosoftWindowsServer'
 @allowed([
   'WindowsServer'
   'Windows-10'
-  'VisualStudio2019latest'
+  'visualstudio2019latest'
   'SQL2016SP1-WS2016'
   'visualStudio2019'
 ])
