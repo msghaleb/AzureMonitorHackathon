@@ -17,7 +17,7 @@ This page will take you step by step through solving challenge one.
 
 - VS has view called SQL Server Object Explorer that can be used to create and delete SQL databases on the SQL server
 
-![enter image description here](https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/images/image2.png)
+![enter image description here](../images/image2.png)
 
 - Connect to the database server VM, make sure to use sqladmin and the password you used during deployment
 
