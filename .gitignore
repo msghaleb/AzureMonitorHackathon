@@ -12,3 +12,4 @@ env
 # temp files
 ~$*
 
+main.parameters.json
