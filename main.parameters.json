@@ -3,13 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "envPrefixName": {
-      "value": "mog10"
+      "value": "kr001"
     },
     "adminUserName": {
       "value": "vmadmin"
     },
     "adminUserPass": {
       "value": "YOUR PASSWORD HERE"
+    },
+    "pathToVSServerSetupScript":{
+      "value": 'https://raw.githubusercontent.com/kasimrehman/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
+    },
+    "pathToWebServerSetupScript":{
+      "value": 'https://raw.githubusercontent.com/kasimrehman/AzureMonitorHackathon/master/sources/SetupWebServers.ps1'
+    },
+    "pathToEShopSourceCodeZip":{
+      "value": 'https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/sources/master.zip'
     }
   }
 }

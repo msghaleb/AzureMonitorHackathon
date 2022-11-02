@@ -2,7 +2,12 @@
 @minLength(2)
 param envPrefixName string = toLower('mogas')
 
+
 param adminUserName string = 'vmadmin'
+
+param pathToVSServerSetupScript string
+param pathToWebServerSetupScript string
+param pathToEShopSourceCodeZip string
 
 @secure()
 param adminUserPass string
@@ -662,9 +667,9 @@ module vswindowsvmext 'modules/vmextension/vmextension.bicep' = {
     vmExtenableAutomaticUpgrade: false
     vmExtsettings: {
       fileUris: [
-        'https://raw.githubusercontent.com/kasimrehman/AzureMonitorHackathon/master/sources/SetupVSServer.ps1'
+        pathToVSServerSetupScript
       ]
-      commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ${envPrefixName}azmhSQLSrv ${adminUserPass}'
+      commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupVSServer.ps1 ${envPrefixName}azmhSQLSrv ${adminUserPass} ${pathToEShopSourceCodeZip}'
     } 
   }
   dependsOn:[
@@ -1051,7 +1056,7 @@ resource vmssdeployment 'Microsoft.Compute/virtualMachineScaleSets@2020-06-01' =
               autoUpgradeMinorVersion: true
               settings: {
                 fileUris: [
-                  'https://raw.githubusercontent.com/kasimrehman/AzureMonitorHackathon/master/sources/SetupWebServers.ps1'
+                  pathToWebServerSetupScript
                 ]
                 commandToExecute: 'powershell.exe -ExecutionPolicy Unrestricted -File SetupWebServers.ps1 ${envPrefixName}azmhVSSrv ${adminUserName} ${adminUserPass}'
               }

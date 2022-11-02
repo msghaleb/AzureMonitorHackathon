@@ -1,7 +1,10 @@
 param (
     [string]$SQLServerName, 
-    [string]$SQLpassword
+    [string]$SQLpassword,
+    [string]${pathToEShopSourceCodeZip}
 )
+
+
 
 # Install Microsoft .Net Core 3.1.100
 $exeDotNetTemp = [System.IO.Path]::GetTempPath().ToString() + "dotnet-sdk-3.1.100-win-x64.exe"
@@ -30,7 +33,7 @@ $zipFileeShopTemp = [System.IO.Path]::GetTempPath().ToString() + "eShopOnWeb-mas
 if (Test-Path $zipFileeShopTemp) { Remove-Item $zipFileeShopTemp -Force }
 $zipFileeShop = [System.IO.Path]::GetTempFileName() | Rename-Item -NewName "eShopOnWeb-master.zip" -PassThru
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest -Uri "https://github.com/kasimrehman/AzureMonitorHackathon/raw/master/sources/master.zip" -OutFile $zipFileeShop
+Invoke-WebRequest -Uri $pathToEShopSourceCodeZip -OutFile $zipFileeShop
 $BackUpPath = $zipFileeShop.FullName
 New-Item -Path c:\eshoponweb -ItemType directory -Force
 $Destination = "C:\eshoponweb"
